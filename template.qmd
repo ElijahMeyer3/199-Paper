@@ -1,5 +1,5 @@
 ---
-title: "Title"
+title: "Introductory Data Science: A Blueprint to Navigate Curricular, Pedagogical, and Computational Challenges"
 format:
   jasa-pdf:
     keep-tex: true  
@@ -8,207 +8,71 @@ format:
   jasa-html: default
 date: last-modified
 author:
-  - name: Author 1
-    acknowledgements: | 
-      The authors gratefully acknowledge _please remember to list all relevant funding sources in the unblinded version_.
+  - name: Elijah Meyer
+    acknowledgements: 
     affiliations:
-      - name: University of XXX
-        department: Department of YYY
-  - name: Author 2
+      - name: Duke University
+        department: Department of Statistics
+  - name: Mine Çetinkaya-Rundel
     affiliations:
-      - name: University of WWW
-        department: Department of ZZZ
+      - name: Duke University
+        department: Department of Statistics
 abstract: |
   The text of your abstract. 200 or fewer words.
 keywords:
-  - 3 to 6 keywords
-  - that do not appear in the title
+  - Data Science 
+  - Curriculum 
+  - keyword 3
 bibliography: bibliography.bib  
 ---
 
 ## Introduction {#sec-intro}
 
-Body of paper.  Margins in this document are roughly 0.75 inches all
-around, letter size paper.
+The need for training in data science is clear. An estimated 11.5 million new data science jobs are projected to be created by 2026, while employment of data scientists is projected to grow by 36 percent from 2021 to 2031 (U.S. Bureau of Labor Statistics, 2023). In response, college and university faculty are starting to develop and implement data science courses (Schwab-McCoy, Baker, & Gasper, 2020). The purpose of this paper is to continue to promote conversations and provide recommendations around the development and implementation of data science courses through the lens of a modernized introductory data science course taught at Duke University.
 
-![Consistency comparison in fitting surrogate model in the tidal power example.](fig1.pdf){#fig-first width=3in}
+This course is designed for students with little to no statistics, data science, or coding experience, a common hurdle identified by faculty when trying to adopt data science (Schwab-McCoy, Baker, & Gasper, 2020). By the end of this course, students are expected and able to clean, investigate, and communicate with data in a reproduceable manner while answering a targeted research question. Detailed learning objectives of this course include learning to explore, visualize, and analyze data in a reproducible and shareable manner through the use of R-studio and GitHub (cite). Through these programs, students gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization. These experiences are generated through a Prepare, Practice, and Perform learning model emersed in real-world questions and data. 
 
-| one  | two  | three | four | five |
-|------|------|-------|------|------|
-| 1.23 | 3.45 | 5.00  | 1.21 | 3.41 |
-| 1.23 | 3.45 | 5.00  | 1.21 | 3.42 |
-| 1.23 | 3.45 | 5.00  | 1.21 | 3.43 |
+To continue and progress the conversation around data science courses, we first examine current curriculum recommendations for undergraduate programs in data science, discuss the current state in undergraduate introductory data science curricula, and review current pedagogical recommendations on how to teach such courses. Next, we discuss the creation and implementation of curricular and pedagogical decisions made in designing the introductory data science course at Duke University. This includes detailing the Prepare, Practice, and Perform format, to support a large class of students with a diverse background in statistics, data science, and coding experience. Within this format, we provide examples of and describe activities and assessments given both in and outside of class. We extend discussions and provide recommendations for implementing and integrating computing tools, such as R-studio and GitHub, in a data science course through our experiences in our course. Lastly, we discuss challenges, and provide insight to help faculty wanting to adopt or adapt a course similar to introductory to data science at Duke University.
 
-: D-optimality values for design X under five different scenarios. {#tbl-one}
+## Data Science: A Review  
 
-- Note that figures and tables (such as @fig-first and @tbl-one) should appear in the paper, not at the end or in separate files.
-- In document front matter, you may set the key `blinded` under a `journal` key to hide the authors and acknowledgements, producing the required blinded version.
-- Remember that in the blind version, you should not identify authors indirectly in the text.  That is, don't say "In Smith et. al.  (2009) we showed that ...". Instead, say "Smith et. al. (2009) showed that ...".
-- These points are only intended to remind you of some requirements.
-Please refer to the instructions for authors
-at [http://amstat.tandfonline.com/action/authorSubmission?journalCode=uasa20&page=instructions#.VFkk7fnF_0c](http://amstat.tandfonline.com/action/authorSubmission?journalCode=uasa20&page=instructions#.VFkk7fnF_0c)
-- For more about ASA\ style, please see [http://journals.taylorandfrancis.com/amstat/asa-style-guide/](http://journals.taylorandfrancis.com/amstat/asa-style-guide/)
-- If you have supplementary material (e.g., software, data, technical
-proofs), identify them in the section below.  In early stages of the
-submission process, you may be unsure what to include as supplementary
-material.  Don't worry---this is something that can be worked out at later stages.
+Although the definition of data science is fluid, it can be generally defined the process transforing raw data into understanding, insight, and knowledge (Wickham \& Grolemund). In practice, data scientists often describe their practice as a means to "gain insights" or "extract meaning" from data (Hernán ... , 2019). In the following sections, we describe the current curricular and pedagogical recommendations for designing a course in data science. 
 
-## Methods {#sec-meth}
+### Curriculum (what is being taught)
 
-Don't take any of these section titles seriously.  They're just for
-illustration.
+Until recently, data modeling made up the majority of data science curricula through classes housed in statistics and mathematics departments (Donoho, 2017). However, there has been a call to create more well-rounded curricula that better align students of with our working definition of data science. In 2017, Curriculum Guidelines for Undergraduate Programs in Data Science provided six major recommendations as to what practitioners of data science should be competent in: Computational and statistical thinking; Mathematical foundations; Model building and assessment; Algorithms and software foundation; Data curation; Knowledge transference—communication and responsibility (Veaux, et al., 2017). These guiding pillars offer an approach for students to develop into problem solvers who interact with, investigate, and make meaning with data. Other visions of data science include more broad divisions of activity: The activities of GDS are classified into six divisions: Data Gathering, Preparation, and Exploration; Data Representation and Transformation; Computing with Data; Data Modeling; Data Visualization and Presentation; and Science about Data Science (Donoh, 2017).
 
-## Verifications {#sec-verify}
+The Association for Computing Machinery (ACM) Education Council is a task force to explore and expand discipline-specific conversations around the field of data science (cite). This council acknowledges that data science curricula can be flexible, but should emphasize  suggests that data science curricula should include applications designed towards building skills in computing, statistics, machine learning and mathematics.
 
-This section will be just long enough to illustrate what a full page of
-text looks like, for margins and spacing.
+Among existing curricular recommendations, there are computational and technological recommendations for data science classrooms. This includes the use of GitHub to ensure the concept of reproducibility and incorporating quantitative programming environments (such as R) (Donoho, 2017; Beckman et al., 2021). Among all recommendations, it is critical to immerse students in real-world data and provide open-ended projects. This allows students "early exposure to and experience with the full data science cycle", in a practical real-world context (Lui \& Huang, 2017; CETINKAYA-RUNDEL, et al., 2022, pg. 3)
+
+ 
+### Pedagogical (how to teach)
+
+Research has shown that the adoption, integration, and implementation of active learning teaching techniques
+can help promote student learning, achievement, and confidence in mathematics (e.g., Freeman
+et al., 2004).
 
 
-:::{add-textheight=".5in"}
-
-@Campbell02, @Schubert13, @Chi81
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-**With this spacing we have 25 lines per page.**
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-%new margin nere
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-:::
 
 
-:::{add-textheight=".2in"}
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-
-:::
-
-## Conclusion {#sec-conc}
-
-## Supplementary Material {.supplementary}
-
-Title:
-
-:   Brief description. (file type)
 
 
-R-package for  MYNEW routine: 
 
-:   R-package MYNEW containing code to perform the diagnostic methods described in the article. The package also contains all datasets used as examples in the article. (GNU zipped tar file)
 
-HIV data set:
 
-:   Data set used in the illustration of MYNEW method in Section~ 3.2. (.txt file)
 
-## BibTeX 
 
-We hope you've chosen to use BibTeX! If you have, please feel free to use the package natbib with any bibliography style you're comfortable with. The .bst file agsm has been included here for your convenience. 
+
+
+
+
+
+
+
+
+
+
+
+
+
