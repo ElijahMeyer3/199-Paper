@@ -64,16 +64,27 @@ As the volume of data continues to grow, the need for those who can make meaning
 **Kaplan Way Discussion** 
 
 
+## The Course 
 
+Could make learning units a section, or could talk about them here. 
 
+This is the "what" - curricular 
 
+## Kaplan Way 
 
+This is the "how" - pedagogical 
 
+### Lectures (Prepare)
 
+### Application exercises (Practice)
 
+### Assessments (Perform)
 
+### Project (Perform)
 
+### Computing and Infrastructure
 
+## Discussion 
 
 
 
