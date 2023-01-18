@@ -181,51 +181,73 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt, breakable, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, sharp corners, borderline west={3pt}{0pt}{shadecolor}, frame hidden, boxrule=0pt, interior hidden, breakable]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-intro}{%
 \section{Introduction}\label{sec-intro}}
 
 The increasing volume of enrollment of data science students
-\citep{Redmond2022}
+\citep{Redmond2022} requires that statistics and data science educators
+commit to developing modern curriculum in order to help students be
+successful. This rapid growth is largely motivated by industries
+evolving towards data-driven decision making, requiring that data
+science graduate possess the tools required to make those kinds of
+decisions. An estimated 11.5 million new data science jobs are projected
+to be created by 2026, while employment of data scientists is projected
+to grow by 36 percent from 2021 to 2031 (U.S. Bureau of Labor
+Statistics, 2023). Despite the demand, colleges are still struggling
+with what a modern data science curriculum should look like
+\citep{Schwab2020}. To this point, much more thought, work, and
+discussions need to take place there before a consensus is reached on
+what should a modern data science curricula, to best prepare students,
+should be.
 
-\citep{Galyardt14mmm}
+Some recent research on creating and examining data science curricula
+has been conducted. For example, in 2014, research at the College of
+Charleston, South Carolina, discuss their design and implementation of a
+four-year data science undergraduate program. They detail their success
+and challenges of implementation across a ten-year year span, ultimately
+concluding that a data science degree program can be successfully
+mounted at the undergraduate level through the requirement of courses
+across data science, computer science, and mathematics
+\citep{Anderson2014}. At the course level, Asamoah, Doran, \& Schiller
+presented their experience in designing, developing and delivering an
+interdisciplinary introduction to data Science course across multiple
+colleges for an ``Introudction to Data Science'' course. The three
+course components including \emph{Data Hacking}, \emph{Math \&
+Statistics Foundations}, and \emph{Predictive Analytics}. Surveys
+ultimately concluded that students were satisfied with the course
+content \citep{Asamoah2015}.
 
-requires that statistics and data science educators commit to developing
-modern curriculum in order to help students be successful. This rapid
-growth is largely motivated by industries evolving towards data-driven
-decision making, requiring that data science graduate possess the tools
-required to make those kinds of decisions. An estimated 11.5 million new
-data science jobs are projected to be created by 2026, while employment
-of data scientists is projected to grow by 36 percent from 2021 to 2031
-(U.S. Bureau of Labor Statistics, 2023). Despite the demand, colleges
-are still struggling with what a modern data science curriculum should
-look like (Schwab-McCoy, Baker \& Gasper, 2020). To this point, much
-more thought, work, and discussions need to take place there before a
-consensus is reached on what should a modern data science curricula, to
-best prepare students, should be. In this paper, we add to the
-discussion by describing a modernized data science curricula for an
+However, the majority of context across the landscape of data science
+curricula largly focuses on how to model data \citep{Donoho2017}. This,
+in combination when a lack of consensus on what constitutes a data
+science curricula, and even less research on how to develop modern data
+science course presents a need for a blueprint to design and implement
+and modernized introduction to data science course. In this paper, we
+attempt to add address this need by describing describing the creation
+and implementation of a modernized data science curricula for an
 introductory data science course at Duke University.
 
 This course is designed for students with little to no statistics, data
 science, or coding experience, a common hurdle identified by faculty
-when trying to implement a data science course (Schwab-McCoy, Baker, \&
-Gasper, 2020). By the end of this course, students are expected and able
-to clean, investigate, and communicate with data in a reproducible
-manner while answering a targeted research question. Detailed learning
-objectives of this course include learning to explore, visualize, and
-analyze data in a reproducible and shareable manner through the use of
-R-studio and GitHub (R-Core Team, 2022; GitHub, 2022). Through these
-programs, students gain experience in data wrangling, exploratory data
-analysis, predictive modeling, and data visualization. These experiences
-are generated through the \emph{Kaplan Way}. The Kaplan Way is a
-learning model ``that combines a scientific, evidence-based design
-philosophy with a straightforward educational approach to learning''
-(https://www.schweser.com/about-kaplan/philosophy). This learning model
-posits a three-phase learning strategy: Prepare, Practice, and Perform.
-During each of these phases, students are equipped with the appropriate
-tools to acquire knowledge, be given an opportunity to apply what they
-know, and to demonstrate mastery of the tasks at hand.
+when trying to implement a data science course \citep{Schwab2020}. By
+the end of this course, students are expected and able to clean,
+investigate, and communicate with data in a reproducible manner while
+answering a targeted research question. Detailed learning objectives of
+this course include learning to explore, visualize, and analyze data in
+a reproducible and shareable manner through the use of R-studio and
+GitHub \citep{R21, github}. Through these programs, students gain
+experience in data wrangling, exploratory data analysis, predictive
+modeling, and data visualization. These experiences are generated
+through the \emph{Kaplan Way}. The Kaplan Way is a learning model ``that
+combines a scientific, evidence-based design philosophy with a
+straightforward educational approach to learning''
+\citep{schweser_2023}. This learning model posits a three-phase learning
+strategy: Prepare, Practice, and Perform. During each of these phases,
+students are equipped with the appropriate tools to acquire knowledge,
+be given an opportunity to apply what they know, and to demonstrate
+mastery of the tasks at hand.
 
 In this paper, we examine current curriculum recommendations for
 undergraduate programs in data science and review current pedagogical
@@ -260,17 +282,15 @@ designing a course in data science.
 \hypertarget{sec-curr}{%
 \subsection{Curriculum}\label{sec-curr}}
 
-Until recently, data modeling made up the majority of data science
-curricula through classes housed in statistics and mathematics
-departments (Donoho, 2017). However, there has been a call to create
-more well-rounded curricula that better unifies methodology in
-statistics, mathematics, computer science, and machine learning to
-prepare students to understand, analyze, and communicate with data. In
-2017, Curriculum Guidelines for Undergraduate Programs in Data Science
-provided six major recommendations as to what practitioners of data
-science should be competent in: Computational and statistical thinking;
-Mathematical foundations; Model building and assessment; Algorithms and
-software foundation; Data curation; Knowledge
+Drivien by the high demade for data science skillsets, there has been a
+call to create more well-rounded curricula that better unifies
+methodology in statistics, mathematics, computer science, and machine
+learning to prepare students to understand, analyze, and communicate
+with data. In 2017, Curriculum Guidelines for Undergraduate Programs in
+Data Science provided six major recommendations as to what practitioners
+of data science should be competent in: Computational and statistical
+thinking; Mathematical foundations; Model building and assessment;
+Algorithms and software foundation; Data curation; Knowledge
 transference---communication and responsibility (Veaux, et al., 2017).
 These guiding pillars offer an approach for students to develop into
 problem solvers who interact with, investigate, and make meaning with
@@ -328,6 +348,8 @@ education provides programs that adequately prepare and train students
 in the field of data science. This article adds to the existing
 literature by describing a modernized introductory data science course
 and how its taught, at Duke University.
+
+\textbf{Kaplan Way Discussion}
 
 
   \bibliography{bibliography.bib}
