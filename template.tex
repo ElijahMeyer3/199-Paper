@@ -158,7 +158,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\date{January 18, 2023}
+\date{January 24, 2023}
 \title{\bf Introductory Data Science: A Blueprint to Navigate
 Curricular, Pedagogical, and Computational Challenges}
 \author{
@@ -181,7 +181,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners, frame hidden, breakable, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, enhanced, interior hidden, breakable]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-intro}{%
 \section{Introduction}\label{sec-intro}}
@@ -220,7 +220,7 @@ ultimately concluded that students were satisfied with the course
 content \citep{Asamoah2015}.
 
 However, the majority of context across the landscape of data science
-curricula largly focuses on how to model data \citep{Donoho2017}. This,
+curricula largely focuses on how to model data \citep{Donoho2017}. This,
 in combination when a lack of consensus on what constitutes a data
 science curricula, and even less research on how to develop modern data
 science course presents a need for a blueprint to design and implement
@@ -349,6 +349,10 @@ in the field of data science. This article adds to the existing
 literature by describing a modernized introductory data science course
 and how its taught, at Duke University.
 
+\textbf{Other potential models}
+
+This is what we do \ldots{}
+
 \textbf{Kaplan Way Discussion}
 
 \hypertarget{the-course}{%
@@ -358,27 +362,129 @@ Could make learning units a section, or could talk about them here.
 
 This is the ``what'' - curricular
 
-\hypertarget{kaplan-way}{%
-\section{Kaplan Way}\label{kaplan-way}}
+\hypertarget{technology}{%
+\subsection{Technology}\label{technology}}
 
-This is the ``how'' - pedagogical
+\hypertarget{github}{%
+\subsubsection{GitHub}\label{github}}
+
+-- What is this
+
+-- Why are we using this
+
+\hypertarget{r-r-studio}{%
+\subsubsection{R + R-studio}\label{r-r-studio}}
+
+-- What is this
+
+-- Why are we using this
+
+\hypertarget{slack}{%
+\subsubsection{Slack}\label{slack}}
+
+-- Emphasis on communication
+
+-- How to set up channels
+
+-- What channels are created
+
+\hypertarget{getting-started}{%
+\section{Getting Started}\label{getting-started}}
+
+\hypertarget{duke-container}{%
+\subsubsection{Duke Container}\label{duke-container}}
+
+-- How instructor sets this up
+
+-- Students reserve container / do not need local download
+
+\hypertarget{collecting-information}{%
+\subsubsection{Collecting Information}\label{collecting-information}}
+
+-- How
+
+-- What
+
+-- What
+
+GitHub username Slack email etc.
+
+\hypertarget{github-organization}{%
+\subsubsection{GitHub Organization}\label{github-organization}}
+
+-- Your class can collaborate on GitHub by using an organization
+account, which serves as a container for your AEs, labs, hws, and
+projects.
+
+-- Why do we use this
+
+-- What does this allow us to do
+
+\hypertarget{teaching-assistants}{%
+\subsubsection{Teaching Assistants}\label{teaching-assistants}}
+
+-- What are they?
+
+-- Roles / Assignments
+
+-- Training
+
+\hypertarget{pedagogy}{%
+\section{Pedagogy}\label{pedagogy}}
 
 \hypertarget{lectures-prepare}{%
 \subsection{Lectures (Prepare)}\label{lectures-prepare}}
+
+Part of the class time will be lectures that introduce new concepts or
+review topics from the preparation videos. Lectures will not repeat
+everything in the videos, they will instead highlight important and
+known to be complex concepts and will be supplemented with live coding
+activities. You are expected to attend every lecture. Lectures will be
+recorded and made available to students with an excused absence upon
+request.
 
 \hypertarget{application-exercises-practice}{%
 \subsection{Application exercises
 (Practice)}\label{application-exercises-practice}}
 
+The purpose of application exercises (AEs) are to create interactive
+live-coding experiences for students in courses using the R programming
+language. A majority of the in-class lectures will be dedicated to
+working on AEs. These exercises give students an opportunity to practice
+apply the statistical concepts and code introduced in previous readings,
+lectures, and recorded videos. AEs are due within three days of the
+corresponding lecture period, and graded based on completion.
+
+\hypertarget{creation}{%
+\subsubsection{Creation}\label{creation}}
+
+Before class, instructors must create student repositories that
+correspond with the upcoming class AE. To do so, instructors must first
+create a template repository, in GitHub, that contains the class'
+content. We then use \texttt{gh\_class} package in R to clone and grant
+access for student's individual AE repository.
+
+AEs are created using Quarto, the next-generation version of R Markdown
+(cite). Features of Quarto provide multiple ways for students to write
+code and type written answer to questions on their own, in groups, or
+along with the instructor during lecture.
+
+\hypertarget{implementation}{%
+\subsubsection{Implementation}\label{implementation}}
+
 \hypertarget{assessments-perform}{%
 \subsection{Assessments (Perform)}\label{assessments-perform}}
 
-\hypertarget{project-perform}{%
-\subsection{Project (Perform)}\label{project-perform}}
+There are three forms of assessment in this course
 
-\hypertarget{computing-and-infrastructure}{%
-\subsection{Computing and
-Infrastructure}\label{computing-and-infrastructure}}
+\hypertarget{homework}{%
+\subsubsection{Homework}\label{homework}}
+
+\hypertarget{labs}{%
+\subsubsection{Labs}\label{labs}}
+
+\hypertarget{project}{%
+\subsubsection{Project}\label{project}}
 
 
 \renewcommand\refname{Discussion}
