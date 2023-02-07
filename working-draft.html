@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>working-drafts</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="working-draft_files/libs/clipboard/clipboard.min.js"></script>
+<script src="working-draft_files/libs/quarto-html/quarto.js"></script>
+<script src="working-draft_files/libs/quarto-html/popper.min.js"></script>
+<script src="working-draft_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="working-draft_files/libs/quarto-html/anchor.min.js"></script>
+<link href="working-draft_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="working-draft_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="working-draft_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="working-draft_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="working-draft_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="working-draft_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="working-draft_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="working-draft_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">working-drafts</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>Not sure how to extend data viz to show last arrow and Friday / Prepare label</p>
+<section id="figure-1" class="level2">
+<h2 class="anchored" data-anchor-id="figure-1">Figure 1</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+    START:::hidden --&gt; A
+    A&gt;<u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] ==&gt;|Tuesday<br>Prepare| B&gt;<u>Wednesday </u><br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b> ]
+    B --&gt; C((<u> Thursday <br> </u> <b>Perform </b> concepts discussed in lecture <br> to various data analysis scenarios ))
+    C --&gt;|Friday<br>Prepare|END:::hidden
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="figure-2" class="level2">
+<h2 class="anchored" data-anchor-id="figure-2">Figure 2</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-2">flowchart LR
+
+START:::hidden --&gt; A
+  A&gt;<u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --&gt; B&gt;<u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  B --&gt; C&gt;<u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  C --&gt; D&gt;<u>Thursday</u> <br> <b>Students perform </b> concepts discussed in lecture <br> to various data analysis scenarios]
+  D --&gt; E&gt;<u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --&gt; END:::hidden
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="figure-3" class="level2">
+<h2 class="anchored" data-anchor-id="figure-3">Figure 3</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-3">flowchart LR
+
+START:::hidden --&gt; A
+  A&gt;<u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --&gt; B&gt;<u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  B --&gt; C&gt;<u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  C --&gt; D((<u>Thursday</u> <br> <b>Students perform </b> concepts discussed in <br> lecture to various data analysis scenarios))
+  D --&gt; E&gt;<u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --&gt; END:::hidden
+</pre>
+<div id="mermaid-tooltip-3" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="figure-4" class="level2">
+<h2 class="anchored" data-anchor-id="figure-4">Figure 4</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-4">flowchart LR
+
+START:::hidden --&gt; id2
+  id2&gt;<u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --&gt; B&gt;<u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  B --&gt; id3&gt;<u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  id3 --&gt; id1((<u>Thursday</u> <br> <b>Students perform </b> concepts discussed in <br> lecture to various data analysis scenarios))
+  style id3 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  style id1 fill:#f9f,stroke:#333,stroke-width:4px;
+  id1 --&gt; E&gt;<u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --&gt; END:::hidden
+</pre>
+<div id="mermaid-tooltip-4" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="figure-5" class="level2">
+<h2 class="anchored" data-anchor-id="figure-5">Figure 5</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-5">flowchart LR
+
+START:::hidden --&gt; id2
+  id2&gt;<u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --&gt; B&gt;<u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  B --&gt; id3&gt;<u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  id3 --&gt; id1&gt;<u>Thursday</u> <br> <b>Students perform </b> concepts discussed in <br> lecture to various data analysis scenarios]
+  style id3 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  style id1 fill:#f9f,stroke:#333,stroke-width:4px;
+  id1 --&gt; E&gt;<u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --&gt; END:::hidden
+</pre>
+<div id="mermaid-tooltip-5" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

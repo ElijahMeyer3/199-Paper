@@ -1,0 +1,79 @@
+---
+title: "working-drafts"
+html:
+  mermaid:
+    theme: forest
+---
+
+
+Not sure how to extend data viz to show last arrow and Friday / Prepare label
+
+## Figure 1 
+
+```{mermaid}
+flowchart LR
+    START:::hidden --> A
+    A><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] ==>|Tuesday<br>Prepare| B><u>Wednesday </u><br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b> ]
+    B --> C((<u> Thursday <br/> </u> <b>Perform </b> concepts discussed in lecture <br> to various data analysis scenarios ))
+    C -->|Friday<br>Prepare|END:::hidden
+```
+
+## Figure 2
+
+```{mermaid}
+flowchart LR
+
+START:::hidden --> A
+  A><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --> B><u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  B --> C><u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  C --> D><u>Thursday</u> <br> <b>Students perform </b> concepts discussed in lecture <br> to various data analysis scenarios]
+  D --> E><u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --> END:::hidden
+```
+
+## Figure 3 
+
+```{mermaid}
+flowchart LR
+
+START:::hidden --> A
+  A><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --> B><u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  B --> C><u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  C --> D((<u>Thursday</u> <br> <b>Students perform </b> concepts discussed in <br> lecture to various data analysis scenarios))
+  D --> E><u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --> END:::hidden
+```
+
+## Figure 4
+
+```{mermaid}
+flowchart LR
+
+START:::hidden --> id2
+  id2><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --> B><u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  B --> id3><u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  id3 --> id1((<u>Thursday</u> <br> <b>Students perform </b> concepts discussed in <br> lecture to various data analysis scenarios))
+  style id3 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  style id1 fill:#f9f,stroke:#333,stroke-width:4px;
+  id1 --> E><u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --> END:::hidden
+```
+
+## Figure 5
+
+```{mermaid}
+flowchart LR
+
+START:::hidden --> id2
+  id2><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>] --> B><u>Tuesday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  B --> id3><u>Wednesday</u> <br> Students attend <b>Lecture</b> and <br> <b> perform in Application Exercises</b>]
+  id3 --> id1><u>Thursday</u> <br> <b>Students perform </b> concepts discussed in <br> lecture to various data analysis scenarios]
+  style id3 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+  style id1 fill:#f9f,stroke:#333,stroke-width:4px;
+  id1 --> E><u>Friday</u> <br> Students <b>prepare</b> for lecture <br> through assigned videos and readings]
+  E --> END:::hidden
+```
+
+Don't know how to add a title. Not sure the functionality exsists. 
