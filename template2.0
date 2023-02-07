@@ -1,0 +1,29 @@
+---
+title: "Introductory Data Science: A Blueprint to Navigate Curricular, Pedagogical, and Computational Challenges"
+format:
+  jasa-pdf:
+    keep-tex: true  
+    journal:
+      blinded: false
+  jasa-html: default
+date: last-modified
+author:
+  - name: Elijah Meyer
+    acknowledgements: 
+    affiliations:
+      - name: Duke University
+        department: Department of Statistics
+  - name: Mine Çetinkaya-Rundel
+    affiliations:
+      - name: Duke University
+        department: Department of Statistics
+abstract: |
+  The text of your abstract. 200 or fewer words.
+keywords:
+  - Data Science 
+  - Curriculum 
+  - Pedagogy
+bibliography: bibliography.bib  
+---
+
+
