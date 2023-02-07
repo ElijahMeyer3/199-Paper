@@ -1,0 +1,71 @@
+---
+title: "viz-example"
+html:
+  mermaid:
+    theme: forest
+---
+
+## Quarto
+
+Live Edit: https://mermaid.live/edit#pako:eNpVj81qw0AMhF9F6NRC_AI-BGK7zSXQQHLz5iBsObuk-8Naphjb7551fEl1EjPfiNGEjW8Zc7xHChqulXKQ5lCXOppeLPU3yLL9fGQB6x2PMxQfRw-99iEYd__c-GKFoJxOK8Yg2rjHslnlK__jeIaqPlEQH27vzvXPz_BVm7NO5_87OnJKfdcd5R1lDUUoKb4Q3KHlaMm0qfq0KgpFs2WFeVpb7mj4FYXKLQmlQfxldA3mEgfe4RBaEq4MpaftJi5PNtJU8w
+
+```{mermaid}
+flowchart LR
+  A>Monday] --> B>Tuesday]
+  B --> C>Wednesday]
+  C --> D>Thursday]
+  D --> E>Friday]
+```
+
+
+Would rather use timeline: https://github.com/mermaid-js/mermaid/issues/3363
+
+Status in-progress
+```{mermaid}
+journey
+    title Typical Week
+    section Monday
+      Class: NA: Prepare, Practice
+    section Tuesday
+      Readings & Videos: NA: Prepare
+    section Wednesday
+      Class: NA: Prepare, Practice
+    section Thursday
+      Lab: NA: Perform
+    section Friday
+      Readings & Videos: NA: Practice
+```
+
+
+```{mermaid}
+flowchart LR
+    START:::hidden --> A
+    A><u>Monday</u> <br> Some writing about class] ==>|Tuesday| B><u>Wednesday </u><br> Some writing about class ]
+    B --> C((<u> Thursday <br/> </u> Something about lab ))
+    C -->|Friday| END:::hidden
+```
+
+
+I would like nodes (as seen below) with the flow chart (maybe)
+
+```{mermaid}
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+
+```
+
+
+Broke live edit trying to make something like this: https://mermaid.js.org/syntax/gantt.html
+
