@@ -39,7 +39,7 @@ journey
 ```{mermaid}
 flowchart LR
     START:::hidden --> A
-    A><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> participate in <b>Application Exercises</b>] ==>|Tuesday <br> Students <b> Prepare </br>| B><u>Wednesday </u><br> Some writing about class ]
+    A><u>Monday</u> <br> Students attend <b>Lecture</b> and <br> participate in <b>Application Exercises</b>] ==>|Tuesday (Prepare)| B><u>Wednesday </u><br> Some writing about class ]
     B --> C((<u> Thursday <br/> </u> Something about lab ))
     C -->|Friday| END:::hidden
 ```

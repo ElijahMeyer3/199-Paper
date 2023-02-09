@@ -26,4 +26,58 @@ keywords:
 bibliography: bibliography.bib
 ---
 
+## Introduction {#sec-intro}
+
+Reader should want to continue reading by thinking "this is something that's interesting"
+
+## The Course {#sec-course}
+
+-- Reader should want to continue reading by thinking "this is something that I would like to teach"
+
+In the following sections, we first detail the technology we've chosen to use when creating and facilitating an introductory data science course. Then, we discuss our pedagogical choices that go into a typical week of our Introduction to Data Science Course. Finally, we discuss the preparation work needed to teach our Introduction to Data Science, informing those on how to get started when creating and modifying their own introductory data science course
+
+## Technology {#sec-tech}
+
+-- Reader should want to continue reading by thinking "so how do I use this"
+
+Next, we discuss how this technology aids in the creation and implementation of lectures, in-class application exercies (AEs), and assessments within the Kaplan model of learning. 
+
+[insert image here]
+
+## Pedagogy {#sec-ped}
+
+-- Reader should want to continue reading by thinking "so how do I teach this"
+
+In this course, we have chosen a combination of teaching methods, interactive activities, and learning assessments to help best prepare introductory data science students the tools they need to be successful outside of university or in future coursework. Our pedagogy includes facilitating lectures, facilitating in-class AEs, running a Lab, and assigning assessments to provide students an opportunity to show what they've learned. 
+
+
+### Student Preperation
+
+
+### Lecture 
+
+A typical week yields 75-minute lectures on Mondays and Wednesdays. These lectures take up part of the class time, and are designed to introduce new concepts or review topics from the preparation videos in a more traditional format. 
+
+Lectures are recorded and made available to students with an excused absence upon request.
+
+### Application Exercies (AEs)
+
+A majority of the time in class will be dedicated to working on AEs. These exercises are live-coding opportunities to practice applying data science concepts and code introduced through preparation materials. AEs are no-stakes assessments, often graded on completion, where students have the ability to write and edit code while asking questions at the student or class level and receive immediate feedback. 
+
+It is up to the discretion of the instructor on how the AEs are created. This can include having students write code themselves, fill in the blank coding exercises, commenting on complete code, or a combination of such questions. 
+
+### Labs 
+
+### Assessments 
+
+
+## Implementation {#sec-imp}
+
+-- This is the how to the two previous sections 
+
+-- Reader should want to continue reading by thinking "tell me more"
+
+## Discussion {#sec-disc}
+
+
 
