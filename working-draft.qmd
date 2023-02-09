@@ -1,8 +1,6 @@
 ---
 title: "working-drafts"
-html:
-  mermaid:
-    theme: forest
+format: pdf
 ---
 
 
