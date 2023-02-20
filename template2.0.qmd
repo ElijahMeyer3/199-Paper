@@ -26,21 +26,105 @@ keywords:
 bibliography: bibliography.bib
 ---
 
+# Audience 
+
+Audience - new to teaching / teachers increasing course size (mention this as a draw in because this is happening). This could be a hook.
+
+I think this needs to be further brought out in the beginning of the intro when formalling writing.... 
+
+
 ## Introduction {#sec-intro}
 
 Reader should want to continue reading by thinking "this is something that's interesting"
 
+-- **Why** we are writing this paper
+
+The increasing volume of enrollment of data science students [@Redmond2022] requires that statistics and data science educators commit to developing modern curriculum in order to help students be successful. This rapid growth is largely motivated by industries evolving towards data-driven decision making, requiring that data science graduate possess the tools required to make those kinds of decisions. An estimated 11.5 million new data science jobs are projected to be created by 2026, while employment of data scientists is projected to grow by 36 percent from 2021 to 2031 (U.S. Bureau of Labor Statistics, 2023). **Thus, class sizes are increasing**. Despite the demand, colleges are still struggling with what a modern data science curriculum should look like [@Schwab2020], and how it can be effectively taught to a large student audience. To this point, much more thought, work, and discussions need to take place there before a consensus is reached on what should a modern data science curricula, to best prepare students, should be.
+
+**What people have been investigating / what's recommended** 
+
+Curricular
+
+- College of Charleston, South Carolina [@Anderson2014]
+
+- Intro to Data Science implementation [@Asamoah2015]
+
+- Curriculum Guidelines for Undergraduate Programs in Data Science  (Veaux, et al., 2017).
+
+- Great data science recommendations (Donoh, 2017)
+
+- Association for Computing Machinery (ACM) Education Council (Danyluk & Leidig, 2021)
+
+Pedagogical 
+
+- Computational and Tech recommendations in curricula (Donoho, 2017; Beckman et al., 2021).
+
+- Active Learning / Other recommendations (i.e. using real data) (Lui & Huang, 2017; Cetinkaya-Rundel, et al., 2022, pg. 3; Carver et al., 2016; Conference Board of Mathematical Sciences, 2016).
+
+**But...** 
+
+However, the majority of context across the landscape of data science curricula largely focuses on how to model data [@Donoho2017]. This, in combination when a lack of consensus on what constitutes a data science curricula, and even less research on how to develop modern data science course presents a need for a blueprint to design and implement and modernized introduction to data science course. In this paper, we attempt to add address this need by describing describing the creation and implementation of a modernized data science curricula for an introductory data science course at Duke University.
+
+**So**
+
+As the volume of data continues to grow, the need for those who can make meaning of data are clear. Thus, it is critical that data science education provides programs that adequately prepare and train students in the field of data science. This article adds to the existing literature by describing a modernized introductory data science course and how its taught, at Duke University.
+
+The purpose of this paper is to offer valuable structure, while providing experiences from our perspective. It is of importance that we stress the amount of flexibility and strength in individuality in all aspects when creating, designing, and implementing an introductory data science course. (I don't know where this goes yet; Mine brings up a good point to make sure this is somewhere highlighed at the forefront)
+
+In this paper, we discuss the integreation of technology in our Introductory to Data Science course, and how these choices have helped chape our curricular and pedagogical decisions made. This includes detailing the implementation of the Kaplan Way learning model, to support a large class of students with a diverse background in statistics, data science, and coding experience. Within this format, we provide examples of and describe activities and assessments given both in and outside of class. We extend discussions and provide recommendations for implementing and integrating computing tools, such as R-studio and GitHub, through our experiences in our course. Lastly, we discuss challenges, and provide insight to help faculty wanting to adopt or adapt a course similar to introductory to data science at Duke University. The purpose of this paper is to continue the discussion, and present a modernized curricula for an introductory data science course at Duke University, and the pedagogical decisions to help best equip students with the data science skills necessary for future classes.
+
+
 ## The Course {#sec-course}
 
--- Reader should want to continue reading by thinking "this is something that I would like to teach"
+Reader should want to continue reading by thinking "this is something that I would like to teach"
 
-In the following sections, we first detail the technology we've chosen to use when creating and facilitating an introductory data science course. Then, we discuss our pedagogical choices that go into a typical week of our Introduction to Data Science Course. Finally, we discuss the preparation work needed to teach our Introduction to Data Science, informing those on how to get started when creating and modifying their own introductory data science course
+**Hook** Students come into the course with little to no statistics, data science, or coding experience, a common hurdle identified by faculty when trying to implement a data science course [@Schwab2020]. By the end of this course, students are expected and able to clean, investigate, and communicate with data in a reproducible manner while answering a targeted research question.
+
+
+-- Detailed learning objectives of this course include learning to explore, visualize, and analyze data in a reproducible and shareable manner through the use of R-studio and GitHub [@R21; @github].
+
+-- gain experience in data wrangling, exploratory data analysis, predictive modeling, and data visualization
+
+-- The Kaplan Way is a learning model "that combines a scientific, evidence-based design philosophy with a straightforward educational approach to learning" [@schweser_2023]
+
+-- Dedicated active learning approach 
+
+-- have a section on the content we teach and cite a paper (maybe goes here)
+
+In the following sections, we first detail the teaching team used to instruct Introduction to Data Science. Next, we detail the technology we've chosen to use when creating and facilitating our introductory data science course. Then, we discuss our pedagogical choices that go into a typical week of our Introduction to Data Science Course. Finally, we discuss the preparation work needed to teach our Introduction to Data Science, informing those on how to get started when creating and modifying their own introductory data science course
+
+## Teaching Team 
+
+-- What is needed 
+
+-- What are their responsibilities 
+
+-- Instructor; Head-TAs; Course Organizers; Lab Leaders; Lab Helpers
+
+- Preparation: How to 
+
+- Communication: How to + Recommendations / strategies 
 
 ## Technology {#sec-tech}
 
 -- Reader should want to continue reading by thinking "so how do I use this"
 
-Next, we discuss how this technology aids in the creation and implementation of lectures, in-class application exercies (AEs), and assessments within the Kaplan model of learning. 
+Next, we discuss our choices of technology..... 
+
+- Github: Why version control; what it is; how we use it at the beginnings of the course
+
+-- Collecting student information 
+
+-- Setting up a GitHub organization 
+
+- R & R-studio; Why; what is is; how students get set up with it 
+
+-- Creating Duke Containers 
+
+(Mention alternative R-studio Cloud in discussion?)
+
+
+Each of these types of technology aids in the creation and implementation our data science pedagogy. This includes in-class application exercise (AEs), lectures, labs, and assessments within the Kaplan model of learning.
 
 [insert image here]
 
@@ -48,27 +132,97 @@ Next, we discuss how this technology aids in the creation and implementation of 
 
 -- Reader should want to continue reading by thinking "so how do I teach this"
 
-In this course, we have chosen a combination of teaching methods, interactive activities, and learning assessments to help best prepare introductory data science students the tools they need to be successful outside of university or in future coursework. Our pedagogy includes facilitating lectures, facilitating in-class AEs, running a Lab, and assigning assessments to provide students an opportunity to show what they've learned. 
-
-
-### Student Preperation
-
-
-### Lecture 
-
-A typical week yields 75-minute lectures on Mondays and Wednesdays. These lectures take up part of the class time, and are designed to introduce new concepts or review topics from the preparation videos in a more traditional format. 
-
-Lectures are recorded and made available to students with an excused absence upon request.
+In this course, we have chosen a combination of teaching methods, interactive activities, and learning assessments to help best prepare introductory data science students the tools they need to be successful outside of university or in future coursework. Our pedagogy includes facilitating in-class AEs, facilitating lectures, running a Lab, and assigning assessments to provide students an opportunity to show what they've learned. 
 
 ### Application Exercies (AEs)
 
 A majority of the time in class will be dedicated to working on AEs. These exercises are live-coding opportunities to practice applying data science concepts and code introduced through preparation materials. AEs are no-stakes assessments, often graded on completion, where students have the ability to write and edit code while asking questions at the student or class level and receive immediate feedback. 
 
-It is up to the discretion of the instructor on how the AEs are created. This can include having students write code themselves, fill in the blank coding exercises, commenting on complete code, or a combination of such questions. 
+-- How GitHub and R are used to create AEs for students
+
+It is up to the discretion of the instructor on the content that goes into the AEs. This can include having students write code themselves, fill in the blank coding exercises, commenting on complete code, or a combination of such questions. 
+
+-- Kaplan Way (Practice) / Active learning implementation of AEs (typical class day strategies / discussion)
+
+### Lecture 
+
+A typical week yields 75-minute lectures on Mondays and Wednesdays. These lectures take up part of the class time, and are designed to introduce new concepts or review topics from the preparation videos in a more traditional format. 
+
+-- Creating slides using Quarto in R (?)
+
+-- Kaplan Way (Prepare) / Active learning implementation during lecture (typical class day strategies / discussion)
+
+Lectures are recorded and made available to students with an excused absence upon request.
 
 ### Labs 
 
+-- apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation
+
+-- Individual and team based 
+
+-- Repo creation 
+
+-- Kaplan Way (Perform) (typical class day strategies / discussion)
+
 ### Assessments 
+
+-- Kaplan Way (Perform) 
+
+-- HW 
+
+- apply what you’ve learned during lecture and lab to complete data analysis tasks
+
+-- Lab 
+
+- apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation
+
+- Individual and team based 
+
+- Repo creation 
+
+-- Exams 
+
+- opportunity to demonstrate what you’ve learned in the course thus far
+
+- take home exams
+
+-- Project 
+
+- analyze an interesting data-driven research question
+
+- group project 
+
+- describe the process / expectations of the project 
+
+^^ The writing above should be in a form where there is practical / useful informatino for the reader. If they were designing the course, do they better understand the assessment structure of an Intro to Data Science course?
+
+
+## Discussion 
+
+-- Pros (What works well)
+
+Ex.  Live coding good
+
+-- Cons (What could be improved)
+
+Ex. Students can fall behind during live coding sessions 
+
+-- Experiences 
+
+Examples include
+
+-- Feasible to adopt to teach for multiple semesters as data science continues to evolve. There is value in the investment. 
+
+-- Computational Resources
+
+-- Human Resources 
+
+
+
+
+
+
+
 
 
 ## Implementation {#sec-imp}
