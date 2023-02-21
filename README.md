@@ -1,33 +1,10 @@
-# Journal of the American Statistical Association (JASA)
+# Introductory Data Science: A Blueprint to Navigate Curricular, Pedagogical, and Computational Challenges
 
-This is a Quarto template that assists you in creating a manuscript for Journals for the American Statistical Association. You can learn more about the Journal of the American Statistical Association at <https://www.tandfonline.com/journals/uasa20>.
+Value: Demand for data science skillsets are inscreasing. As demand increases, class sizes to best prepare students with these skills are increasing as well. However, there is still debate over what modern data science curricula should look like. We present a flexiable framework that highlights our implementation of technical, pedagogical, and curriculur decisions within our Introductory to Data Science course at Duke University. 
 
-## Creating a New Article
+Audience - new to teaching / teachers increasing course size / teachers wanting to "modernize" their course 
 
-You can use this as a template to create an article for a JASA journal. To do this, use the following command:
+Goal: Draft out by early May 
 
-```quarto use template quarto-journals/jasa```
+Potential Journals: JSDSE or Harvard Data Science
 
-This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
-
-## Installation For Existing Document
-
-You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
-
-```quarto install extension quarto-journals/jasa```
-
-## Usage 
-
-To use the format, you can use the format names `jasa-pdf` and `jasa-html`. For example:
-
-```quarto render article.qmd --to jasa-pdf```
-
-or in your document yaml
-
-```yaml
-format:
-  jasa-pdf:
-    keep-tex: true    
-```
-
-You can view a preview of the rendered template at <https://quarto-journals.github.io/jasa/>.
