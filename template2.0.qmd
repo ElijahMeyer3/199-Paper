@@ -78,6 +78,19 @@ In this paper, we discuss the integration of technology in our Introductory to D
 
 Reader should want to continue reading by thinking "this is something that I would like to teach"
 
+Students enrolling in STA199 have little to no statistics, data science, or coding experience. In a typical semester, this course seats roughly 179 students, which is considered to be large by all measures. These factors are two common hurdles identified by faculty when trying to implement a data science course [@Schwab2020; @Kok_2008]. However, by the end of our course, students are able to use data to understand natural phenomena, investigate patterns, model outcomes, and make predictions. \\
+
+This course is built on four large-scale learning objectives: learn to explore, visualize, and analyze data in a reproducible and shareable manner; gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization; work on problems and case studies inspired by and based on real-world questions and data; learn to effectively communicate results through written assignments and project presentation. These objectives are accomplished through interactive lectures and labs that present content, problems, and case studies inspired by and based on real-world questions and data. A typical student week consists of two lectures and one lab section. During these times, students learn the statistical software R, R-studio, and GitHub to visualize and analyze data in a reproducible and share able manner.
+
+Topics taught in STA199 fall under two major units: Unit 1 - Exploring data; Unit 2 - Making rigorous conclusions. In unit 1, students become first introduced to R, R-studio, and Github. During this unit, students start to create data visualizations and learn how to both import and manipulate data to be better suited for analysis. In unit 2, students extend their investigations with data to include modeling. Specifically, students fit a variety of models (simple linear regression, multiple linear regression, logistic regression), and learn the fundementals of hypothesis testing. For a more complete description about the topics taught and data sets used in creating these lessons, please see **A fresh look at introductory data science**. 
+
+When teaching, instructors are committed to the Kaplan Way learning model "that combines a scientific, evidence-based design philosophy with a straightforward educational approach to learning" [@schweser_2023]. 
+
+**pick up here**
+
+
+All data analyses are completed using the statistical software R and R-studio. Everything completed in this course will be done in a reproducible and shareable manner using GitHub and Quarto in R-studio. 
+
 **Hook** Students enroll in a large class capacity with little to no statistics, data science, or coding experience. These factors are two common hurdles identified by faculty when trying to implement a data science course [@Schwab2020; @Kok_2008]. By the end of this course, students are able to use R, R-studio, and GitHub to clean, investigate, and communicate with data in a reproducible manner while answering a targeted research question.
 
 -- Detailed learning objectives of this course include learning to explore, visualize, and analyze data in a reproducible and shareable manner through the use of R-studio and GitHub [@R21; @github].
