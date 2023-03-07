@@ -109,9 +109,6 @@ The course organizer is expected to work across each section of STA199, instead 
 Through my experience as an instructor working with this designed team, it is imperative that everyone is communicating with each other. A team with many different roles poses risk for the instructor to be unaware of how or what decisions are being enacted at the grading and lab levels of the course. Thus, it is recommended that the instructor trains everyone on the teaching team to use a communication system that allows every member to communicate any questions they may have, or decisions they make to the entire team. In the past, we have used the software *Slack*, with appropriately named channels such as *grading-questions* where TAs can post examples and questions about grading and the instructor can clearly state their expectations. Further, it should be noted that the head TA should not be treated as a "bridge of communication" for the instructor to the rest of the teaching team. It is critical that that the instructor is in consistent contact with all members of the teaching team in making sure all lab leaders and helpers understand the course content, upcoming assignments, and know what's expected of them in their assigned role. We recommend holding a weekly meeting with all members of the teaching team to ensure this. When members are unable to come, it is an expectation that they watch a recorded video of the meeting and reach out if they have any questions about what was discussed. 
 
 
-
-
-
 -- What is needed
 
 -- What are their responsibilities
@@ -123,6 +120,47 @@ Through my experience as an instructor working with this designed team, it is im
 -   Communication: How to + Recommendations / strategies
 
 ## Technology {#sec-tech}
+
+In this section we will detail the computing infrastructure used in STA199 used to create and a course such as STA199. This includes details on how to use R, R-studio, and GitHub's from the instructor's perspective to set up lectures, AEs, labs and homework. First, we start with the student information necessary to collect and steps that must be taken before creation can take place. 
+
+### Setting up a GitHub account
+
+We can use R, R-studio, and GitHub to create interactive lessons, and assign pre-created assessments to individual or groups of students. To do so, we must instruct students to create a GitHub account. This is done of the first day of class, and often, students are given time during class to sign up. Following tips from "Happy Git with R" (cite), we suggest students do the following when creating their name:
+
+-- Incorporate your actual name 
+-- Reuse your username from other contexts if you can 
+-- Pick a username you will be comfortable revealing to your future boss 
+-- Be as unique as possible in as few characters as possible. Shorter is better than longer 
+-- Avoid words with special meaning in programming (i.e., NA)
+
+Once students create their account, we suggest getting this information from them in a survey. This normally can be done through your learning management system. It is critical to reiterate to students that spelling and capitalization matter when answer this question. We suggest asking the question as follows: (insert question here).
+
+
+If you, as the instructor, do not have a GitHub account, you will need to create one as well. This student information will be needed to create your GitHub organization for your course.
+
+
+### GitHub organization 
+
+GitHub organizations are shared accounts where instructors and students can collaborate across many projects at once. Using your account, you can create a new GitHub organization by clicking on your profile icon in the upper right hand corner, go to *Settings*, *Access*, *New Organization*. It's suggested to name this organization the name of your class and the current semester you teaching in (i.e., sta199-s23). One of the many benefits of teaching through GitHub is the ability to re-use what you currently create as a template for subsequent semesters. Once your organization is created we can use packages within R and R-studio to efficiently invite students and create assessments for them. 
+
+### R & R-Studio
+
+R is a statistical programming language for computing, modeling, and data visualization, while R-studio is an integrated development environment for R (cite). Both are freely available to download and use. In an introductory course, it is recommended to  
+
+
+This course follows the recommendations outlined in Çetinkaya-Rundel
+and Rundel (2018) for setting up a computational infrastructure to allow for
+pedagogical innovations while keeping student frustration to a minimum.
+
+
+Interface for the GitHub API that enables efficient
+management of courses on GitHub. It has a functionality for
+managing organizations, teams, repositories, and users on GitHub
+and helps automate most of the tedious and repetitive tasks
+around creating and distributing assignments.
+
+
+
 
 Reader should want to continue reading by thinking "so how do I use this"
 
