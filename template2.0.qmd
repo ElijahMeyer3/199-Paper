@@ -143,21 +143,17 @@ If you, as the instructor, do not have a GitHub account, you will need to create
 
 GitHub organizations are shared accounts where instructors and students can collaborate across many projects at once. Using your account, you can create a new GitHub organization by clicking on your profile icon in the upper right hand corner, go to *Settings*, *Access*, *New Organization*. It's suggested to name this organization the name of your class and the current semester you teaching in (i.e., sta199-s23). One of the many benefits of teaching through GitHub is the ability to re-use what you currently create as a template for subsequent semesters. Once your organization is created we can use packages within R and R-studio to efficiently invite students and create assessments for them. 
 
-### R & R-Studio
+### R & R-Studio: Student Perspective
 
-R is a statistical programming language for computing, modeling, and data visualization, while R-studio is an integrated development environment for R (cite). Both are freely available to download and use. In an introductory course, it is recommended to  
+R is a statistical programming language for computing, modeling, and data visualization, while R-studio is an integrated development environment for R (cite). Both are freely available to download and use. In an introductory course, it is recommended to minimize student frustration and distraction through the use of pre-packaged computational infrastructure (Çetinkaya-Rundel and Rundel, 2018). Per this recommendation, STA199 has students use R and R-studio through a *Duke Container*. Duke containers provides instructors at Duke university the opportunity to facilitate the use of different software, such as R and R-studio, through an online container instead of needing students to locally download both programs. Additionally, instructors have the ability to manage and install packages students will need for the semester, helping provide a neat and well organized starting experience with a new statistical language. (insert discussion on how this is done). 
 
-
-This course follows the recommendations outlined in Çetinkaya-Rundel
-and Rundel (2018) for setting up a computational infrastructure to allow for
-pedagogical innovations while keeping student frustration to a minimum.
+Thoughts: Transition to R-studio cloud discussion? What alternatives can instructors use to imitate Duke containers if this is something they do not have access to at their university. 
 
 
-Interface for the GitHub API that enables efficient
-management of courses on GitHub. It has a functionality for
-managing organizations, teams, repositories, and users on GitHub
-and helps automate most of the tedious and repetitive tasks
-around creating and distributing assignments.
+### R & R-Studio: Instructor Perspective
+
+
+
 
 
 
