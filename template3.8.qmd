@@ -114,9 +114,65 @@ R, R-studio, and GitHub aids in the creation and implementation our data science
 
 In this course, we have chosen a combination of teaching methods, interactive activities, and learning assessments to help best prepare introductory data science students the tools they need to be successful outside of university or in future coursework. Our pedagogy includes facilitating in-class AEs, facilitating lectures, running a lab, and assigning assessments to provide students an opportunity to show what they've learned.
 
-### Application Exercies (AEs)
 
 ### Lecture
+
+### Application Exercies (AEs)
+
+Application exercises are structured interactive lessons that allow students to learn through doing in class. The purpose of these exercises are to give students the opportunity to practice apply the statistical concepts and code introduced in the prepare videos, readings, and anything introduced during lecture. When first starting to create an AE, we suggest streamlining the process through a GitHub template repository cloned into R-studio as a project. We choose to use *Quarto* within R-studio to create AEs. This choice is intentional, to provide students the opportunity to practice writing code and answering questions in a reproducible format supported by such programming.
+
+When creating an AE, we suggest creating a mix of guided and open ended questions that encourage students to both follow along with instructor demonstrations and progress to coding on their own. This format has largely been accepted by students: "I really enjoy the AE's and that you take the time to walk us through the code and answer questions; I like how the ae gives us a chance to practice the skills on our own after class as well. Additionally, we suggest that questions are scaffolded, meaning that if students fall behind or type incorrect code when trying to follow along, that they have the ability to continuing engaging for the remaining AE. This may include having answers to questions in a separate document, or within the same AE towards the bottom. Moreover, we suggest clearly labeling where students are expected to type out answers in text or code throughout the exercise to further streamline their involvement. 
+
+An example on an AE used to help teach (insert concept) can be found here:
+
+It is highly recommended to design lessons with built in time to have students work on their own. The amount of time can largely depend on the question being asked, and the teaching style of the instructor. We have found that multiple 3-5 minute blocks for students to answer questions without the instructor's guidance works well. Next, it is encouraged to answer these questions together as a class built off student responses before moving to the next set of material or questions. 
+
+
+We use the function `org_create_assignment` from the `gh_class` package to copy a template repository to students whom are within the class GitHub organization. In order to create 
+
+
+(At this point in the paper, readers should know about github organizations and information to collect from students. Don't let this detail get lost to make this how-to section weaker)
+
+
+```{r}
+#| eval: false
+
+
+org_create_assignment(
+  org = org,
+  repo = paste0(assignment, "-", student_name),
+  user = student_name,
+  source_repo = paste0(org, "/", assignment)
+)
+```
+
+Above, `org` represents....
+
+`assignment` is a character vector that represents the name of AE to be copied to students (i.e. ae-07); 
+
+`student_name` is .... 
+
+
+Talk about timing out issue? 
+
+
+
+Experience talking points:
+
+
+- Invest time now so they can be re-tooled in future semesters 
+
+- Talk about grading pros + cons 
+
+- Talk about how AEs are the backbone of learning in this course (can not just lecture an expect to succeed)
+
+- Bring up how this works with a lot of students still
+
+
+
+
+
+ 
 
 ### Labs
 
