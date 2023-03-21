@@ -169,12 +169,78 @@ Experience talking points:
 - Bring up how this works with a lot of students still
 
 
-
-
-
- 
-
 ### Labs
+
+Labs for STA199 meet once a week for 75 minutes, and allow for students to apply concepts found in prepare material, lecture, and AEs to various data analysis scenarios. Lab section sizes are kept to around 30 students so each have more of an opportunity to converse with each other and the lab leader when working through the assessment.
+
+Much like AEs, the instructor or head TA will create and clone a lab repository to all students that has the assessment and any other intangibles (like a data set) in it by changing the `assignment` vector to contain the name of original lab repository. Roughly one-third of the way into the semester, students are assigned to groups to complete a class project. We suggest strategically assigning groups based on a collection of the following information 
+
+- 
+
+- 
+
+- 
+
+- ... 
+
+Additionally, from this point forward in the semester, we suggest having all labs be completed as group work. Introducing group work during lab can help students learn from different perspectives, practice their communication skills, and improve their problem solving skills in the context of statistics and data science. When groups are formed, they are tasked to come up with a team name. This team name will be the name used to create their team repositories for the remaining labs. To create team repositories, we use the following collected information from students: lab section; team name; last name; first name. Please visit (insert link) to see an example of the format explained. Note, these are fake student names and have no meaning or association with Duke University.  
+
+
+We can use these data and change the code found in (figure-1??) to create repositories for each team.
+
+```{r}
+#| eval: false
+
+
+teams <- read_csv("teams.csv")
+
+org_create_assignment(
+  org = org, # name of your organization
+  repo = paste0(assignment, "-", teams$team), #name of the repo you are cloning and teams you are cloning for
+  user = teams$Github_Username, #adding individual students to team repo
+  team = teams$team, #team (or group) they are added to
+  source_repo = paste0(org, "/", assignment) #naming repo 
+)
+
+
+
+
+```
+
+The new expectation is that once groups are formed, one lab assessment will be turned in for each group instead of each individual. 
+
+
+After groups are formed, we give a set of recommendations for groups to help ensure a successful and positive group dynamic. This includes: 
+
+
+- Establish a clear line of communication with all members using Slack or another form of communication 
+
+- Share ideas. Let your voice be heard.
+
+- Teach each other. 
+
+- Do not approach group work as a bunch of individual assignments. 
+
+
+To further ensure positive group dynamic, we initiate three peer review surveys. These peer review surveys provide ...... Questions range from only having instructor visibility, to being shared with all team members to promote productive conversations. An example question is as follows: 
+
+(insert example question)
+
+
+
+
+
+Experience talking points for labs:
+
+- Merge Conflicts (hesitancy to cause one)
+
+- Lots of work for large class sizes (groups)
+
+- Pros and cons of group formation 
+
+- These are run by TAs (pros + cons)
+
+- Peer review question types 
 
 ### Assessments
 

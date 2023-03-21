@@ -47,6 +47,46 @@
   \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -158,7 +198,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\date{March 8, 2023}
+\date{March 21, 2023}
 \title{\bf Introductory Data Science: A Blueprint to Navigate
 Curricular, Pedagogical, and Computational Challenges}
 \author{
@@ -181,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, breakable, frame hidden, boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden, interior hidden, breakable]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -486,14 +526,186 @@ facilitating in-class AEs, facilitating lectures, running a lab, and
 assigning assessments to provide students an opportunity to show what
 they've learned.
 
-\hypertarget{application-exercies-aes}{%
-\subsection{Application Exercies (AEs)}\label{application-exercies-aes}}
-
 \hypertarget{lecture}{%
 \subsection{Lecture}\label{lecture}}
 
+\hypertarget{application-exercies-aes}{%
+\subsection{Application Exercies (AEs)}\label{application-exercies-aes}}
+
+Application exercises are structured interactive lessons that allow
+students to learn through doing in class. The purpose of these exercises
+are to give students the opportunity to practice apply the statistical
+concepts and code introduced in the prepare videos, readings, and
+anything introduced during lecture. When first starting to create an AE,
+we suggest streamlining the process through a GitHub template repository
+cloned into R-studio as a project. We choose to use \emph{Quarto} within
+R-studio to create AEs. This choice is intentional, to provide students
+the opportunity to practice writing code and answering questions in a
+reproducible format supported by such programming.
+
+When creating an AE, we suggest creating a mix of guided and open ended
+questions that encourage students to both follow along with instructor
+demonstrations and progress to coding on their own. This format has
+largely been accepted by students: ``I really enjoy the AE's and that
+you take the time to walk us through the code and answer questions; I
+like how the ae gives us a chance to practice the skills on our own
+after class as well. Additionally, we suggest that questions are
+scaffolded, meaning that if students fall behind or type incorrect code
+when trying to follow along, that they have the ability to continuing
+engaging for the remaining AE. This may include having answers to
+questions in a separate document, or within the same AE towards the
+bottom. Moreover, we suggest clearly labeling where students are
+expected to type out answers in text or code throughout the exercise to
+further streamline their involvement.
+
+An example on an AE used to help teach (insert concept) can be found
+here:
+
+It is highly recommended to design lessons with built in time to have
+students work on their own. The amount of time can largely depend on the
+question being asked, and the teaching style of the instructor. We have
+found that multiple 3-5 minute blocks for students to answer questions
+without the instructor's guidance works well. Next, it is encouraged to
+answer these questions together as a class built off student responses
+before moving to the next set of material or questions.
+
+We use the function \texttt{org\_create\_assignment} from the
+\texttt{gh\_class} package to copy a template repository to students
+whom are within the class GitHub organization. In order to create
+
+(At this point in the paper, readers should know about github
+organizations and information to collect from students. Don't let this
+detail get lost to make this how-to section weaker)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{org\_create\_assignment}\NormalTok{(}
+  \AttributeTok{org =}\NormalTok{ org,}
+  \AttributeTok{repo =} \FunctionTok{paste0}\NormalTok{(assignment, }\StringTok{"{-}"}\NormalTok{, student\_name),}
+  \AttributeTok{user =}\NormalTok{ student\_name,}
+  \AttributeTok{source\_repo =} \FunctionTok{paste0}\NormalTok{(org, }\StringTok{"/"}\NormalTok{, assignment)}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Above, \texttt{org} represents\ldots.
+
+\texttt{assignment} is a character vector that represents the name of AE
+to be copied to students (i.e.~ae-07);
+
+\texttt{student\_name} is \ldots.
+
+Talk about timing out issue?
+
+Experience talking points:
+
+\begin{itemize}
+\item
+  Invest time now so they can be re-tooled in future semesters
+\item
+  Talk about grading pros + cons
+\item
+  Talk about how AEs are the backbone of learning in this course (can
+  not just lecture an expect to succeed)
+\item
+  Bring up how this works with a lot of students still
+\end{itemize}
+
 \hypertarget{labs}{%
 \subsection{Labs}\label{labs}}
+
+Labs for STA199 meet once a week for 75 minutes, and allow for students
+to apply concepts found in prepare material, lecture, and AEs to various
+data analysis scenarios. Lab section sizes are kept to around 30
+students so each have more of an opportunity to converse with each other
+and the lab leader when working through the assessment.
+
+Much like AEs, the instructor or head TA will create and clone a lab
+repository to all students that has the assessment and any other
+intangibles (like a data set) in it by changing the \texttt{assignment}
+vector to contain the name of original lab repository. Roughly one-third
+of the way into the semester, students are assigned to groups to
+complete a class project. We suggest strategically assigning groups
+based on a collection of the following information
+
+\begin{itemize}
+\tightlist
+\item
+\item
+\item
+\item
+  \ldots{}
+\end{itemize}
+
+Additionally, from this point forward in the semester, we suggest having
+all labs be completed as group work. Introducing group work during lab
+can help students learn from different perspectives, practice their
+communication skills, and improve their problem solving skills in the
+context of statistics and data science. When groups are formed, they are
+tasked to come up with a team name. This team name will be the name used
+to create their team repositories for the remaining labs. To create team
+repositories, we use the following collected information from students:
+lab section; team name; last name; first name. Please visit (insert
+link) to see an example of the format explained. Note, these are fake
+student names and have no meaning or association with Duke University.
+
+We can use these data and change the code found in (figure-1??) to
+create repositories for each team.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{teams }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"teams.csv"}\NormalTok{)}
+
+\FunctionTok{org\_create\_assignment}\NormalTok{(}
+  \AttributeTok{org =}\NormalTok{ org, }\CommentTok{\# name of your organization}
+  \AttributeTok{repo =} \FunctionTok{paste0}\NormalTok{(assignment, }\StringTok{"{-}"}\NormalTok{, teams}\SpecialCharTok{$}\NormalTok{team), }\CommentTok{\#name of the repo you are cloning and teams you are cloning for}
+  \AttributeTok{user =}\NormalTok{ teams}\SpecialCharTok{$}\NormalTok{Github\_Username, }\CommentTok{\#adding individual students to team repo}
+  \AttributeTok{team =}\NormalTok{ teams}\SpecialCharTok{$}\NormalTok{team, }\CommentTok{\#team (or group) they are added to}
+  \AttributeTok{source\_repo =} \FunctionTok{paste0}\NormalTok{(org, }\StringTok{"/"}\NormalTok{, assignment) }\CommentTok{\#naming repo }
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+The new expectation is that once groups are formed, one lab assessment
+will be turned in for each group instead of each individual.
+
+After groups are formed, we give a set of recommendations for groups to
+help ensure a successful and positive group dynamic. This includes:
+
+\begin{itemize}
+\item
+  Establish a clear line of communication with all members using Slack
+  or another form of communication
+\item
+  Share ideas. Let your voice be heard.
+\item
+  Teach each other.
+\item
+  Do not approach group work as a bunch of individual assignments.
+\end{itemize}
+
+To further ensure positive group dynamic, we initiate three peer review
+surveys. These peer review surveys provide \ldots\ldots{} Questions
+range from only having instructor visibility, to being shared with all
+team members to promote productive conversations. An example question is
+as follows:
+
+(insert example question)
+
+Experience talking points for labs:
+
+\begin{itemize}
+\item
+  Merge Conflicts (hesitancy to cause one)
+\item
+  Lots of work for large class sizes (groups)
+\item
+  Pros and cons of group formation
+\item
+  These are run by TAs (pros + cons)
+\item
+  Peer review question types
+\end{itemize}
 
 \hypertarget{assessments}{%
 \subsection{Assessments}\label{assessments}}
