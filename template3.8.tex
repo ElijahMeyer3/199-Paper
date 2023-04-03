@@ -198,7 +198,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\date{March 21, 2023}
+\date{April 3, 2023}
 \title{\bf Introductory Data Science: A Blueprint to Navigate
 Curricular, Pedagogical, and Computational Challenges}
 \author{
@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden, interior hidden, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners, breakable, boxrule=0pt, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -230,22 +230,22 @@ Reader should want to continue reading by thinking ``this is something
 that I would like to teach''
 
 In the following sections, we describe our introductory data science
-course offered to predominantly freshman level students at Duke
-University called Introduction to Data Science and Statistical Thinking
+course, offered to predominantly freshman level students at Duke
+University, titled Introduction to Data Science and Statistical Thinking
 (STA199). Often, these students are (interested in / major + minor in /
 description of typical student demographic). Students enrolling in
 STA199 commonly have little to no statistics, data science, or coding
 experience. In a typical semester, this course seats roughly 179
 students, which is considered to be large by all measures. Both the lack
-of experience and size of class are identified as two common hurdles by
-faculty when trying to implement an introductory data science course
-\citep{Schwab2020, Kok_2008}. However, by the end of this course,
-students are able to use data both R and GitHub to understand natural
-phenomena, investigate patterns, and model outcomes in a reproducible
-format. \textbackslash{}
+of experience and large class size are identified as two common hurdles
+by faculty when trying to create and instruct an introductory data
+science course \citep{Schwab2020, Kok_2008}. However, by the end of this
+course, students are able to use data both R and GitHub to create data
+visualizations, investigate patterns, and model outcomes in a
+reproducible format.
 
 This course is built on four large-scale learning objectives: learn to
-explore, visualize, and analyze data in a reproducible and shareable
+explore, visualize and analyze data in a reproducible and shareable
 manner; gain experience in data wrangling and munging, exploratory data
 analysis, predictive modeling, and data visualization; work on problems
 and case studies inspired by and based on real-world questions and data;
@@ -255,82 +255,80 @@ interactive lectures and labs that present content, problems, and case
 studies inspired by and based on real-world questions and data.
 
 When teaching, instructors are committed to the Kaplan Way learning
-model ``that combines a scientific, evidence-based design philosophy
-with a straightforward educational approach to learning'' \citep[pg.
-3]{schweser_2023}.
+model (Figure 1) ``that combines a scientific, evidence-based design
+philosophy with a straightforward educational approach to learning''
+\citep[pg. 3]{schweser_2023}.
 
-\begin{figure}
-
-{\centering \includegraphics{images/Kaplan.png}
-
-}
-
-\end{figure}
+\includegraphics{images/Kaplan.png} \textbf{Fig 1:} Kaplan Learning
+Model for STA 199
 
 This model is composed of three phases: prepare, practice, and perform.
 All three phases are designed to guide the instructor in facilitating an
 overall quality learning experience for the student. Each of these
-phases are performed during a typical week within a semester, including
-through preparation material, lectures, in-class application exercises,
-labs, and assessments such as homework.
+phases are performed during a typical week within a semester,
+accomplished through preparation materials, lectures, in-class
+application exercises, labs, and assessments.
 
-During the prepare phases, students are completing readings, watching
-videos, and listening to lecture that ultimately builds upon a new
-foundation of data science concepts being learned. The goal of preparing
-students is to put them in a position where they can build upon what
-they are learning, and create new knowledge through the practice phase.
-The practice phase is designed to be an opportunity for students to
-reinforce the new information gained, as well as uncover new concepts in
-data science. This is achieved through the use of interactive
-application exercises (AEs) in class where students work alone, in
-groups, or with the instructor in live coding sessions. Finally,
-students enter the perform phase to show their progress made in the
-previous two phases. This is typically done through assessments such as
-homework, exams, and projects. Additionally, students perform
-individually, or with a group, during weekly labs that tend to focus
-more on computation. This learning model is a continuous cycle
-throughout the semester as new topics are introduced.
+During the prepare phase, students are completing readings, watching
+videos, and listening to in-class lecture that ultimately helps
+students' develop a new foundation of data science concepts being
+learned. The goal of preparing students is to put them in a position
+where they can build upon what they are learning, and create new
+knowledge through the practice phase. The practice phase is designed to
+be an opportunity for students to reinforce the new information gained,
+as well as uncover new concepts in data science. This is achieved
+through the use of interactive application exercises (AEs) administered
+in class where students either work alone, in groups, or with the
+instructor in live coding sessions. Finally, students enter the perform
+phase, showcasing their progress made in the previous two phases. This
+is typically done through assessments such as homework, labs, exams, and
+projects. This learning model is a continuous cycle throughout the
+semester as new topics are introduced.
 
 Topics taught in STA199 fall under two major units: Unit 1 - Exploring
 data; Unit 2 - Making rigorous conclusions. In Unit 1, students become
 first introduced to R, R-studio, and Github. During this unit, students
 start to create data visualizations and learn how to both import and
-manipulate data to be better suited for analysis. In unit 2, students
+manipulate data to be better suited for analysis. In Unit 2, students
 extend their investigations with data to include modeling. Specifically,
 students fit a variety of models (simple linear regression, multiple
 linear regression, logistic regression), and learn the fundamentals of
-hypothesis testing. For a more complete description about the topics
-taught and data sets used in creating these lessons, please see
-\textbf{A fresh look at introductory data science (cite)}.
+hypothesis testing. For a more complete description of the topics taught
+and data sets used in creating these lessons, please see \textbf{A fresh
+look at introductory data science (cite)}.
 
 In this paper, we describe the preparation and implementation process of
 STA199 in its entirety. This includes details of the teaching team used
-to instruct STA199, technology chosen to use when creating and
-facilitating our introductory data science course, and the pedagogical
-choices that go into a typical week of teaching. This includes a
-comprehensive description of a flexible framework on how to create, set
-up, and implement an introduction to data science course similar to
-STA199. When describing this framework, we articulate first hand
-experiences and suggestions surrounding some of the choices made to
-create and instruct STA199.
+to instruct, technology chosen to use when creating and implementing
+STA199, and the pedagogical choices that go into a typical week of
+teaching. We detail a comprehensive description of a flexible framework
+on how to create, set up, and implement an introduction to data science
+course similar to STA199. When describing this framework, we articulate
+first hand experiences and suggestions surrounding some of the choices
+made to create and instruct STA199. Throughout this paper, we aim to
+support newer instructors who are developing or teaching an introductory
+data science course; instructors with courses that are increasing in
+size; and instructors who want to implement more technical tools into
+their curricula and classroom.
 
 \hypertarget{teaching-team}{%
 \section{Teaching Team}\label{teaching-team}}
 
-We define a teaching team as a group consisting of one instructor and
-multiple teaching assistants (TAs). The assignment of any teaching
-assistant is to both support the instructor in charge of the class, and
-support the students in the classroom. These TAs range from
-undergraduate to PH.D. level students, and vary in teaching experience.
-(Writing on TA selection process). Once selected\ldots{} (writing on TA
-training).
+To account for the large class size, we structure and organize a
+teaching team to best facilitate STA199. Our teaching team as a group
+consists of one instructor and multiple teaching assistants (TAs). The
+responsibilities of any TA is to both support the instructor in charge
+of the class, and support the students in the classroom. These TAs range
+from undergraduate to PH.D. level students, and vary in teaching
+experience. \textbf{(Writing on TA selection process). Once
+selected\ldots{} (writing on TA training).}
 
-Once training is complete, students are assigned roles that indicate
-their responsibilities during the semester. These roles include
-\emph{course organizer}, \emph{head TA}, \emph{lab leader}, and
-\emph{lab helper}. Often, these roles are given based on the level of
-student, with more academically experienced TAs taking on the roles of
-course organizer, head TA, and lab leader, where as students with less
+Once training is complete, TAs are assigned roles that indicate their
+responsibilities during the semester. These roles include \emph{course
+organizer}, \emph{head TA}, \emph{lab leader}, and \emph{lab helper}.
+Often, these roles are given based on the academic level of student,
+with more academically experienced TAs taking on the roles of course
+organizer, head TA, and lab leader, where as students with less
 experience (i.e.~undergraduate students) take on the role of lab helper.
 
 Lab sections are held once a week, and are facilitated in person by both
@@ -344,24 +342,26 @@ apply concepts discussed in lecture to what's being assigned. In
 addition, both must hold two hours of office hours each week and have
 grading responsibilities assigned throughout the semester.
 
-Head TA responsibilities can generally be categorized as one of the
-following: Administrative or Pedagogical. Administrative
+Head TA responsibilities can generally be categorized into the following
+categories: Administrative and Pedagogical. Administrative
 responsibilities include the organization and distribution of TA
 responsibilities throughout the semester. It is imperative that the head
 TA and instructor clearly communicate expectations with each other to
 establish exactly how rules and responsibilities that are given to the
-TAs are assigned. Administrative duties include reminding other TAs
-about bi-weekly payroll deadlines and ensure TAs are working their
+TAs are assigned. Other administrative duties include reminding other
+TAs about bi-weekly payroll deadlines and ensure TAs are working their
 alloted hours per week (and not more). Within these alloted hours, a
 head TA distributes grading assignments and deadlines to both lab
-helpers and leaders per week. They make sure all TAs complete grading
-within a week and spot check the grading accuracy and quality of all
-written feedback given. (insert 1-2 sentences about experience).
-Pedagogically, head TAs are responsible for creating or reviewing answer
-keys and grading rubrics for homework and lab assessments as the
-instructor sees fit. Each head TA is also assigned to instruct one lab
-section during the semester. Before becoming a Head TA, there are
-additional
+helpers and leaders per week. The head TA makes sure that all TAs
+complete grading within a week and spot check the grading accuracy and
+quality of all written feedback given. We have had positive experiences
+in having a head TA delegate administrative tasks to other members of
+the teaching team. Pedagogically, head TAs are responsible for creating
+or reviewing answer keys and grading rubrics for homework and lab
+assessments as the instructor sees fit. Each head TA is also assigned to
+instruct one lab section during the semester. Before becoming a Head TA,
+there is additional training that specializes head TAs in their
+administrative responsibilities.
 
 The course organizer is expected to work across each section of STA199,
 instead of working with a single instructor. Their responsibilities
@@ -375,29 +375,41 @@ from students. This includes filing away student exemptions, providing
 extensions for extreme circumstances, and enforcing the late work policy
 outlined in the syllabus when necessary.
 
-(Paragraph on flexibility in team structure)
+Although this is our proposed team structure, we want to emphasize that
+there is great flexibility in coming up with how a teaching team is
+built and operates for an introductory to data science course. Among any
+team, we encourage a system designed to alleviate the grading
+responsibilities of a large class from a single individual, dispersed
+into many among the team. When grading, it is suggested that each
+individual is properly trained on how to grade assessments, and
+expectations on how to provide feedback are clear. This has often been a
+point of contention from students in the past. For each assignment, we
+recommend having one person grade one problem across the entirety of the
+class roster. This helps adhere to more consistent grading, and
+encourages more grading questions to be asked when they arise earlier in
+the grading process.
 
-Through my experience as an instructor working with this designed team,
-it is imperative that everyone is communicating with each other. A team
-with many different roles poses risk for the instructor to be unaware of
-how or what decisions are being enacted at the grading and lab levels of
-the course. Thus, it is recommended that the instructor trains everyone
-on the teaching team to use a communication system that allows every
-member to communicate any questions they may have, or decisions they
-make to the entire team. In the past, we have used the software
-\emph{Slack}, with appropriately named channels such as
-\emph{grading-questions} where TAs can post examples and questions about
-grading and the instructor can clearly state their expectations.
-Further, it should be noted that the head TA should not be treated as a
-``bridge of communication'' for the instructor to the rest of the
-teaching team. It is critical that that the instructor is in consistent
-contact with all members of the teaching team in making sure all lab
-leaders and helpers understand the course content, upcoming assignments,
-and know what's expected of them in their assigned role. We recommend
-holding a weekly meeting with all members of the teaching team to ensure
-this. When members are unable to come, it is an expectation that they
-watch a recorded video of the meeting and reach out if they have any
-questions about what was discussed.
+Through our experiences, it has been imperative that everyone within the
+team is communicating with each other. A team with many different roles
+poses risk for the instructor to be unaware of how or what decisions are
+being enacted at the grading and lab levels of the course. Thus, it is
+recommended that the instructor trains everyone on the teaching team to
+use a communication system that allows every member to communicate any
+questions they may have, or decisions they make to the entire team. In
+the past, we have used the software \emph{Slack}, with appropriately
+named channels such as \emph{grading-questions} where TAs can post
+examples and questions about grading and the instructor can clearly
+state their expectations in a response. Further, it should be noted that
+the head TA should not be treated as a ``bridge of communication'' for
+the instructor to the rest of the teaching team. It is critical that
+that the instructor is in consistent contact with all members of the
+teaching team in making sure all lab leaders and helpers understand the
+course content, upcoming assignments, and know what's expected of them
+in their assigned role. We recommend holding a weekly meeting with all
+members of the teaching team to ensure this. When members are unable to
+come, it is an expectation that they watch a recorded video of the
+meeting and reach out if they have any questions about what was
+discussed.
 
 \hypertarget{sec-tech}{%
 \section{Technology}\label{sec-tech}}
