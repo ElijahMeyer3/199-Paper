@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, boxrule=0pt, enhanced, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, breakable, frame hidden, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -414,22 +414,23 @@ discussed.
 \hypertarget{sec-tech}{%
 \section{Technology}\label{sec-tech}}
 
-In this section we will detail the computing infrastructure used to
-create STA199. This includes details and examples with R, R-studio, and
-GitHub, from the instructor's perspective, to set up lectures, AEs, labs
-and homework. First, we start with the necessary student information to
-collect before creation can take place.
+We can use R, R-studio, and GitHub to create interactive lessons, and
+assign pre-created assessments to individual or groups of students. In
+the following sections, we will detail the computing infrastructure
+needed to do so. This includes details and examples with R, R-studio,
+and GitHub, from the instructor's perspective, to set up lectures, AEs,
+labs and homework. First, we start with the necessary steps and student
+information to collect before creation can take place.
 
 \hypertarget{setting-up-a-github-account}{%
 \subsection{Setting up a GitHub
 account}\label{setting-up-a-github-account}}
 
-We can use R, R-studio, and GitHub to create interactive lessons, and
-assign pre-created assessments to individual or groups of students. To
-do so, we must instruct students to create a GitHub account. This is
-done of the first day of class, and often, students are given time
-during class to sign up. Following tips from ``Happy Git with R''
-(cite), we suggest students do the following when creating their name:
+To participate in interactive lessons and assessments, students must set
+up a GitHub account. This is done of the first day of class, and often,
+students are given time during class to sign up. Following tips from
+``Happy Git with R'' (cite), we suggest students do the following when
+creating their name:
 
 -- Incorporate your actual name
 
@@ -445,8 +446,8 @@ better than longer
 Once students create their account, we suggest getting this information
 from them in a survey. This normally can be done through your learning
 management system. It is critical to reiterate to students that spelling
-and capitalization matter when answer this question. We suggest asking
-the question as follows:
+and capitalization matter when they provide their GitHub username. We
+suggest asking the question as follows:
 
 \begin{figure}
 
@@ -457,8 +458,8 @@ the question as follows:
 \end{figure}
 
 If you, as the instructor, do not have a GitHub account, you will need
-to create one as well. This student information will be needed to create
-your GitHub organization for your course.
+to create one as well. This student information will be used to enroll
+students in your created GitHub organization for your course.
 
 \hypertarget{github-organization}{%
 \subsection{GitHub organization}\label{github-organization}}

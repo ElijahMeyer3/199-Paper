@@ -66,11 +66,11 @@ Through our experiences, it has been imperative that everyone within the team is
 
 ## Technology {#sec-tech}
 
-In this section we will detail the computing infrastructure used to create STA199. This includes details and examples with R, R-studio, and GitHub, from the instructor's perspective, to set up lectures, AEs, labs and homework. First, we start with the necessary student information to collect before creation can take place.
+We can use R, R-studio, and GitHub to create interactive lessons, and assign pre-created assessments to individual or groups of students. In the following sections, we will detail the computing infrastructure needed to do so. This includes details and examples with R, R-studio, and GitHub, from the instructor's perspective, to set up lectures, AEs, labs and homework. First, we start with the necessary steps and student information to collect before creation can take place.
 
 ### Setting up a GitHub account
 
-We can use R, R-studio, and GitHub to create interactive lessons, and assign pre-created assessments to individual or groups of students. To do so, we must instruct students to create a GitHub account. This is done of the first day of class, and often, students are given time during class to sign up. Following tips from "Happy Git with R" (cite), we suggest students do the following when creating their name:
+To participate in interactive lessons and assessments, students must set up a GitHub account. This is done of the first day of class, and often, students are given time during class to sign up. Following tips from "Happy Git with R" (cite), we suggest students do the following when creating their name:
 
 -- Incorporate your actual name
 
@@ -82,11 +82,11 @@ We can use R, R-studio, and GitHub to create interactive lessons, and assign pre
 
 -- Avoid words with special meaning in programming (i.e., NA)
 
-Once students create their account, we suggest getting this information from them in a survey. This normally can be done through your learning management system. It is critical to reiterate to students that spelling and capitalization matter when answer this question. We suggest asking the question as follows:
+Once students create their account, we suggest getting this information from them in a survey. This normally can be done through your learning management system. It is critical to reiterate to students that spelling and capitalization matter when they provide their GitHub username. We suggest asking the question as follows:
 
 ![](images/github.question.png){fig-align="center"}
 
-If you, as the instructor, do not have a GitHub account, you will need to create one as well. This student information will be needed to create your GitHub organization for your course.
+If you, as the instructor, do not have a GitHub account, you will need to create one as well. This student information will be used to enroll students in your created GitHub organization for your course.
 
 ### GitHub organization
 
