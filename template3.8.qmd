@@ -66,7 +66,7 @@ Through our experiences, it has been imperative that everyone within the team is
 
 ## Technology {#sec-tech}
 
-In this section we will detail the computing infrastructure used in STA199 used to create and a course such as STA199. This includes details on how to use R, R-studio, and GitHub's from the instructor's perspective to set up lectures, AEs, labs and homework. First, we start with the student information necessary to collect and steps that must be taken before creation can take place.
+In this section we will detail the computing infrastructure used to create STA199. This includes details and examples with R, R-studio, and GitHub, from the instructor's perspective, to set up lectures, AEs, labs and homework. First, we start with the necessary student information to collect before creation can take place.
 
 ### Setting up a GitHub account
 
