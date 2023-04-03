@@ -66,7 +66,12 @@ Through our experiences, it has been imperative that everyone within the team is
 
 ## Technology {#sec-tech}
 
-We can use R, R-studio, and GitHub to create interactive lessons, and assign pre-created assessments to individual or groups of students. In the following sections, we will detail the computing infrastructure needed to do so. This includes details and examples with R, R-studio, and GitHub, from the instructor's perspective, to set up lectures, AEs, labs and homework. First, we start with the necessary steps and student information to collect before creation can take place.
+We can use R, R-studio, and GitHub to create interactive lessons, and assign pre-created assessments to individual or groups of students. In the following sections, we will detail the computing infrastructure needed to do so. This includes details and examples with R, R-studio, and GitHub, from the instructor's perspective, to set up lectures, AEs, labs and homework. First, we justify our decision to use GitHub in STA199 before detailing necessary steps and student information needed so creation can take place.
+
+### Why GitHub
+
+We choose to use GitHub for STA199 because it easily and efficiently allows us to create and administer assessments and interactive lessons to a large class size in individual repositories. Further, within these repositories, instructors can provide template code and other resources necessary to best facilitate an interactive lesson where students can code together with the instructor during lecture. Additionally, teaching through GitHub provides the ability to re-use what you currently create as a template for subsequent semesters. Thus, this system both rewards and encourages time investment into the creation of assessments and lesson plans. Moreover, exposing students to version control software early in their academic career helps them develop good habits as researchers and better understand the importance of reproducibility in science. These are just some of the many documented benefits of using GitHub in an introductory data science course. To being, we need each student to create their own GitHub account.
+
 
 ### Setting up a GitHub account
 
@@ -90,21 +95,22 @@ If you, as the instructor, do not have a GitHub account, you will need to create
 
 ### GitHub organization
 
-GitHub organizations are shared accounts where instructors and students can collaborate across many projects at once. Using your account, you can create a new GitHub organization by clicking on your profile icon in the upper right hand corner, go to *Settings*, *Access*, *New Organization*. It's suggested to name this organization the name of your class and the current semester you teaching in (i.e., sta199-s23). One of the many benefits of teaching through GitHub is the ability to re-use what you currently create as a template for subsequent semesters. Once your organization is created we can use packages within R and R-studio to efficiently invite students and create assessments for them.
+GitHub organizations are shared accounts where instructors and students can collaborate across many projects at once. Using your account, you can create a new GitHub organization by clicking on your profile icon in the upper right hand corner, go to *Settings*, *Access*, *New Organization*. It's suggested to name this organization the name of your class and the current semester you teaching in (i.e., sta199-s23). Once your organization is created we can use packages within R and R-studio to efficiently invite students and create assessments and interactive lessons for them that they can access on their own laptop device.
+
+## Why R & R-Studio
+
+R is a statistical programming language for computing and modeling while R-studio is an integrated development environment for R (cite). We choose these resources because they are freely available to download and use, as well as in high demand in different data science positions post graduation (cite). In addition, this programming language has a comprehensive library of packages that allows students to create data visualizations and seamlessly analyze data. For our course, we choose to accomplish learning objectives through predominantly through the `tidyverse` package in R. This package helps students import, tidy, transform, visualize, model, and communicate results. Further, this software is compatible with online versions that students can access without having to go through a local installment if they do not wish or are unable. There exists online versions that can be set up for students, including pre-populating their software with the appropriate packages needed for the semester. 
+
 
 ### Setting Up R & R-Studio
 
-R is a statistical programming language for computing, modeling, and data visualization, while R-studio is an integrated development environment for R (cite). Both are freely available to download and use. In an introductory course, it is recommended to minimize student frustration and distraction through the use of pre-packaged computational infrastructure (Çetinkaya-Rundel and Rundel, 2018). Per this recommendation, STA199 has students use R and R-studio through a *Duke Container*. Duke containers provides instructors at Duke university the opportunity to facilitate the use of different software, such as R and R-studio, through an online container instead of needing students to locally download both programs. Additionally, instructors have the ability to manage and install packages students will need for the semester, helping provide a neat and well organized starting experience with a new statistical language. (insert discussion on how this is done).
+In an introductory course, it is recommended to minimize student frustration and distraction through the use of pre-packaged computational infrastructure (Çetinkaya-Rundel and Rundel, 2018). Per this recommendation, STA199 has students use R and R-studio through a *Duke Container*. Duke containers provides instructors at Duke university the opportunity to facilitate the use of different software, such as R and R-studio, through an online container instead of needing students to locally download both programs. Additionally, instructors have the ability to manage and install packages students will need for the semester, helping provide a neat and well organized starting experience with a new statistical language. (insert discussion on how this is done).
 
 (Thoughts: Transition to R-studio cloud discussion? What alternatives can instructors use to imitate Duke containers if this is something they do not have access to at their university.)
 
 ### Using R & R-Studio to manage GitHub organization
 
-(insert discussion / how-to on ghclass): includes invitations.
-
-(set the stage for writing on how to create repos for students is subsequent sections *which will be a good segway*)
-
-. . .
+(insert discussion / how-to on ghclass): includes example code on how to invite students to organization.
 
 R, R-studio, and GitHub aids in the creation and implementation our data science pedagogy. This includes the creation and distribution of in-class AEs, lectures, labs, and assessments. In the following sections we describe in detail both how to create, structure, and distribute materials used in STA199.
 

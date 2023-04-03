@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, breakable, frame hidden, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners, boxrule=0pt, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -419,8 +419,28 @@ assign pre-created assessments to individual or groups of students. In
 the following sections, we will detail the computing infrastructure
 needed to do so. This includes details and examples with R, R-studio,
 and GitHub, from the instructor's perspective, to set up lectures, AEs,
-labs and homework. First, we start with the necessary steps and student
-information to collect before creation can take place.
+labs and homework. First, we justify our decision to use GitHub in
+STA199 before detailing necessary steps and student information needed
+so creation can take place.
+
+\hypertarget{why-github}{%
+\subsection{Why GitHub}\label{why-github}}
+
+We choose to use GitHub for STA199 because it easily and efficiently
+allows us to create and administer assessments and interactive lessons
+to a large class size in individual repositories. Further, within these
+repositories, instructors can provide template code and other resources
+necessary to best facilitate an interactive lesson where students can
+code together with the instructor during lecture. Additionally, teaching
+through GitHub provides the ability to re-use what you currently create
+as a template for subsequent semesters. Thus, this system both rewards
+and encourages time investment into the creation of assessments and
+lesson plans. Moreover, exposing students to version control software
+early in their academic career helps them develop good habits as
+researchers and better understand the importance of reproducibility in
+science. These are just some of the many documented benefits of using
+GitHub in an introductory data science course. To being, we need each
+student to create their own GitHub account.
 
 \hypertarget{setting-up-a-github-account}{%
 \subsection{Setting up a GitHub
@@ -470,18 +490,33 @@ can create a new GitHub organization by clicking on your profile icon in
 the upper right hand corner, go to \emph{Settings}, \emph{Access},
 \emph{New Organization}. It's suggested to name this organization the
 name of your class and the current semester you teaching in (i.e.,
-sta199-s23). One of the many benefits of teaching through GitHub is the
-ability to re-use what you currently create as a template for subsequent
-semesters. Once your organization is created we can use packages within
-R and R-studio to efficiently invite students and create assessments for
-them.
+sta199-s23). Once your organization is created we can use packages
+within R and R-studio to efficiently invite students and create
+assessments and interactive lessons for them that they can access on
+their own laptop device.
+
+\hypertarget{why-r-r-studio}{%
+\section{Why R \& R-Studio}\label{why-r-r-studio}}
+
+R is a statistical programming language for computing and modeling while
+R-studio is an integrated development environment for R (cite). We
+choose these resources because they are freely available to download and
+use, as well as in high demand in different data science positions post
+graduation (cite). In addition, this programming language has a
+comprehensive library of packages that allows students to create data
+visualizations and seamlessly analyze data. For our course, we choose to
+accomplish learning objectives through predominantly through the
+\texttt{tidyverse} package in R. This package helps students import,
+tidy, transform, visualize, model, and communicate results. Further,
+this software is compatible with online versions that students can
+access without having to go through a local installment if they do not
+wish or are unable. There exists online versions that can be set up for
+students, including pre-populating their software with the appropriate
+packages needed for the semester.
 
 \hypertarget{setting-up-r-r-studio}{%
 \subsection{Setting Up R \& R-Studio}\label{setting-up-r-r-studio}}
 
-R is a statistical programming language for computing, modeling, and
-data visualization, while R-studio is an integrated development
-environment for R (cite). Both are freely available to download and use.
 In an introductory course, it is recommended to minimize student
 frustration and distraction through the use of pre-packaged
 computational infrastructure (Çetinkaya-Rundel and Rundel, 2018). Per
@@ -503,12 +538,8 @@ do not have access to at their university.)
 \subsection{Using R \& R-Studio to manage GitHub
 organization}\label{using-r-r-studio-to-manage-github-organization}}
 
-(insert discussion / how-to on ghclass): includes invitations.
-
-(set the stage for writing on how to create repos for students is
-subsequent sections \emph{which will be a good segway})
-
-. . .
+(insert discussion / how-to on ghclass): includes example code on how to
+invite students to organization.
 
 R, R-studio, and GitHub aids in the creation and implementation our data
 science pedagogy. This includes the creation and distribution of
