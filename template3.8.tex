@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, interior hidden, frame hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, breakable, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, sharp corners, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -689,6 +689,11 @@ Example code can be seen below.
 \end{Highlighting}
 \end{Shaded}
 
+It should be noted that, with such a large class size, (time out error
+discussion).
+
+(Code to creat ``second batch of AEs'' if needed?)
+
 Hands on learning through AEs are the backbone of learning in STA199. We
 have found that providing students with the opportunity to code in
 real-time during class keeps them more engaged and eager to continue
@@ -724,59 +729,83 @@ individual course as you see fit.
 \subsection{Labs}\label{labs}}
 
 Labs for STA199 meet once a week for 75 minutes, and allow for students
-to apply concepts found in prepare material, lecture, and AEs to various
-data analysis scenarios. Lab section sizes are kept to around 30
+to apply concepts found in prepare material, lecture, and AEs, to
+various data analysis scenarios. Lab section sizes are kept to around 30
 students so each have more of an opportunity to converse with each other
 and the lab leader when working through the assessment.
 
 Much like AEs, the instructor or head TA will create and clone a lab
 repository to all students that has the assessment and any other
 intangibles (like a data set) in it by changing the \texttt{assignment}
-vector to contain the name of original lab repository. Roughly one-third
-of the way into the semester, students are assigned to groups to
-complete a class project. We suggest strategically assigning groups
-based on a collection of the following information
+object to contain the name of original lab repository. In the lab
+repository, we choose to create a starter document with places for
+students to write code under specific question numbers. The actual lab
+assessment that this document corresponds to can be found on the class
+website that is reference during lab time.
+
+Roughly one-third of the way into the semester, students are assigned to
+groups to complete a class project. We suggest strategically assigning
+groups based on a collection of the following information
 
 \begin{itemize}
-\tightlist
 \item
+  Declared or Intended Major
 \item
+  Year in School
 \item
-\item
-  \ldots{}
+  Suggested times they work on school assignments
 \end{itemize}
 
-Additionally, from this point forward in the semester, we suggest having
-all labs be completed as group work. Introducing group work during lab
-can help students learn from different perspectives, practice their
-communication skills, and improve their problem solving skills in the
-context of statistics and data science. When groups are formed, they are
-tasked to come up with a team name. This team name will be the name used
-to create their team repositories for the remaining labs. To create team
-repositories, we use the following collected information from students:
-lab section; team name; last name; first name. Please visit (insert
-link) to see an example of the format explained. Note, these are fake
-student names and have no meaning or association with Duke University.
+From our experience, groups who have significantly different years in
+school across students have more friction and tend to work less well
+together than students that have more similar years in school.
+Additionally, we highly suggest pairing up students that share common
+interests using their intended or declared major in school. The class
+project assigned is an open ended research project where the group
+collectively decides on a project topic. We have found that students can
+feel disengaged or left out of the group if they have different
+interests than the others, and their interests are not reflected when
+picking a project topic. When groups our assigned, each group during a
+lab are tasked to come up with a team name. This team name will be the
+name used to create their team repositories for the remaining labs. We
+add this information as follows to the roster document.
 
-We can use these data and change the code found in (figure-1??) to
-create repositories for each team.
+\begin{longtable}[]{@{}llll@{}}
+\toprule()
+team\_name & last\_name & first\_name & github\_username \\
+\midrule()
+\endhead
+& & & \\
+\bottomrule()
+\end{longtable}
+
+From this point forward in the semester, we choose to have all labs be
+completed as group work. Introducing group work during labs and through
+a class project can help students learn from different perspectives,
+practice their communication skills, and improve their problem solving
+skills in the context of statistics and data science.
+
+We can use these new data and change the code found in (??) to create
+repositories for each team.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{teams }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"teams.csv"}\NormalTok{)}
+\NormalTok{teams }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"roster.csv"}\NormalTok{)}
 
 \FunctionTok{org\_create\_assignment}\NormalTok{(}
   \AttributeTok{org =}\NormalTok{ org, }\CommentTok{\# name of your organization}
   \AttributeTok{repo =} \FunctionTok{paste0}\NormalTok{(assignment, }\StringTok{"{-}"}\NormalTok{, teams}\SpecialCharTok{$}\NormalTok{team), }\CommentTok{\#name of the repo you are cloning and teams you are cloning for}
-  \AttributeTok{user =}\NormalTok{ teams}\SpecialCharTok{$}\NormalTok{Github\_Username, }\CommentTok{\#adding individual students to team repo}
-  \AttributeTok{team =}\NormalTok{ teams}\SpecialCharTok{$}\NormalTok{team, }\CommentTok{\#team (or group) they are added to}
+  \AttributeTok{user =}\NormalTok{ teams}\SpecialCharTok{$}\NormalTok{github\_username, }\CommentTok{\#adding individual students to team repo}
+  \AttributeTok{team =}\NormalTok{ teams}\SpecialCharTok{$}\NormalTok{team\_name, }\CommentTok{\#team (or group) they are added to}
   \AttributeTok{source\_repo =} \FunctionTok{paste0}\NormalTok{(org, }\StringTok{"/"}\NormalTok{, assignment) }\CommentTok{\#naming repo }
 \NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 The new expectation is that once groups are formed, one lab assessment
-will be turned in for each group instead of each individual.
+will be turned in for each group instead of each individual. This
+further helps lesson the grading responsibilities to those that are
+assigned it.
 
 After groups are formed, we give a set of recommendations for groups to
 help ensure a successful and positive group dynamic. This includes:
