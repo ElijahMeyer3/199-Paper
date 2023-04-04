@@ -126,25 +126,25 @@ To start, we suggest creating a separate repository that will contain all code u
 org <- "sta-199-s23"
 ```
 
-
+The following code invites students to your GitHub organization using your defined org and the GitHub usernames collected from your students in a previous survey. For the example below, we chose to name the student survey "roster.csv".
 
 ```{r}
-#|eval: false
+#| eval: false
 
 # invite members ---------------------------------------------------------------
 
+roster <- read_csv("roster.csv")
+
 org_invite(
   org = org,
-  user = student_name
+  user = roster$gihub_name
 )
-
-# get list of members ----------------------------------------------------------
-
-student_name <- org_members(org = org)
 
 ```
 
-R, R-studio, and GitHub aids in the creation and implementation our data science pedagogy. This includes the creation and distribution of in-class AEs, lectures, labs, and assessments. In the following sections, we discuss pedagogy, strategies on how to implement in the classroom, and detail the creation of such items using R, R-studio, and GitHub during a typical week in the semester (Figure 2).
+Once the invites are sent, students will need to accept the invitation to the organization. 
+
+Streamlining teaching through R, R-studio, and GitHub greatly alleviates common challenges that arise when working with a large class size, such as activity and assignment distribution. Further, this technology aids in the creation and implementation our data science pedagogy. This includes the creation and distribution of in-class AEs, lectures, labs, and assessments. In the following sections, we discuss pedagogy, strategies on how to implement in the classroom, and detail the creation of such items using R, R-studio, and GitHub during a typical week in the semester (Figure 2).
 
 ![](images/pedagogy.png){fig-align="center"} **Fig 2:** Model of pedagogical choices used in STA199 for a typical week
 

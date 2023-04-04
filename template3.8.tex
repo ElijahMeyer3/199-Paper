@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, interior hidden, enhanced, breakable, sharp corners, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, breakable, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -477,6 +477,19 @@ suggest asking the question as follows:
 
 \end{figure}
 
+Once this information is complete, it was must be exported and stored as
+a \texttt{.csv} file. We recommend having the following structure of
+data collection.
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{Example Data Collection}\tabularnewline
+\toprule()
+\endhead
+last\_name & first\_name & github\_username \\
+& & \\
+\bottomrule()
+\end{longtable}
+
 If you, as the instructor, do not have a GitHub account, you will need
 to create one as well. This student information will be used to enroll
 students in your created GitHub organization for your course.
@@ -538,15 +551,52 @@ do not have access to at their university.)
 \subsection{Using R \& R-Studio to manage GitHub
 organization}\label{using-r-r-studio-to-manage-github-organization}}
 
-(insert discussion / how-to on ghclass): includes example code on how to
-invite students to organization.
+To invite students into your GitHub organization, we will use a myriad
+of functions from the \texttt{gh\_class} package. (insert discuss on
+what the gh-class package is).
 
-R, R-studio, and GitHub aids in the creation and implementation our data
-science pedagogy. This includes the creation and distribution of
-in-class AEs, lectures, labs, and assessments. In the following
-sections, we discuss pedagogy, strategies on how to implement in the
-classroom, and detail the creation of such items using R, R-studio, and
-GitHub during a typical week in the semester (Figure 2).
+To start, we suggest creating a separate repository that will contain
+all code used to invite students to your organization and to create AEs
+and assessments for them. Within a document in this new repository, we
+must first define our GitHub organization as a character string to be
+used in later function. We suggest calling this \texttt{org}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{org }\OtherTok{\textless{}{-}} \StringTok{"sta{-}199{-}s23"}
+\end{Highlighting}
+\end{Shaded}
+
+The following code invites students to your GitHub organization using
+your defined org and the GitHub usernames collected from your students
+in a previous survey. For the example below, we chose to name the
+student survey ``roster.csv''.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# invite members {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\NormalTok{roster }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"roster.csv"}\NormalTok{)}
+
+\FunctionTok{org\_invite}\NormalTok{(}
+  \AttributeTok{org =}\NormalTok{ org,}
+  \AttributeTok{user =}\NormalTok{ roster}\SpecialCharTok{$}\NormalTok{gihub\_name}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Once the invites are sent, students will need to accept the invitation
+to the organization.
+
+Streamlining teaching through R, R-studio, and GitHub greatly alleviates
+common challenges that arise when working with a large class size, such
+as activity and assignment distribution. Further, this technology aids
+in the creation and implementation our data science pedagogy. This
+includes the creation and distribution of in-class AEs, lectures, labs,
+and assessments. In the following sections, we discuss pedagogy,
+strategies on how to implement in the classroom, and detail the creation
+of such items using R, R-studio, and GitHub during a typical week in the
+semester (Figure 2).
 
 \includegraphics{images/pedagogy.png} \textbf{Fig 2:} Model of
 pedagogical choices used in STA199 for a typical week
