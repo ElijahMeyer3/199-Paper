@@ -36,8 +36,7 @@ This course is built on four large-scale learning objectives: learn to explore, 
 
 When teaching, instructors are committed to the Kaplan Way learning model (Figure 1) "that combines a scientific, evidence-based design philosophy with a straightforward educational approach to learning" [@schweser_2023, pg. 3].
 
-![](images/Kaplan.png){fig-align="center"}
-**Fig 1:** Kaplan Learning Model for STA 199
+![](images/Kaplan.png){fig-align="center"} **Fig 1:** Kaplan Learning Model for STA 199
 
 This model is composed of three phases: prepare, practice, and perform. All three phases are designed to guide the instructor in facilitating an overall quality learning experience for the student. Each of these phases are performed during a typical week within a semester, accomplished through preparation materials, lectures, in-class application exercises, labs, and assessments.
 
@@ -55,10 +54,9 @@ Once training is complete, TAs are assigned roles that indicate their responsibi
 
 Lab sections are held once a week, and are facilitated in person by both a lab leader and lab helper. The responsibilities of a lab helper are supporting both the students and lab leader as they see fit. Examples of this may include setting up the classroom before class, or conducting small group conversations when students have questions about the material. The lab leader is responsible for facilitating the lab. This involves working through a pre-made lab to ensure they can help students apply concepts discussed in lecture to what's being assigned. In addition, both must hold two hours of office hours each week and have grading responsibilities assigned throughout the semester.
 
-Head TA responsibilities can generally be categorized into the following categories: Administrative and Pedagogical. Administrative responsibilities include the organization and distribution of TA responsibilities throughout the semester. It is imperative that the head TA and instructor clearly communicate expectations with each other to establish exactly how rules and responsibilities that are given to the TAs are assigned. Other administrative duties include reminding other TAs about bi-weekly payroll deadlines and ensure TAs are working their alloted hours per week (and not more). Within these alloted hours, a head TA distributes grading assignments and deadlines to both lab helpers and leaders per week. The head TA makes sure that all TAs complete grading within a week and spot check the grading accuracy and quality of all written feedback given. We have had positive experiences in having a head TA delegate administrative tasks to other members of the teaching team. Pedagogically, head TAs are responsible for creating or reviewing answer keys and grading rubrics for homework and lab assessments as the instructor sees fit. Each head TA is also assigned to instruct one lab section during the semester. Before becoming a Head TA, there is additional training that specializes head TAs in their administrative responsibilities. 
+Head TA responsibilities can generally be categorized into the following categories: Administrative and Pedagogical. Administrative responsibilities include the organization and distribution of TA responsibilities throughout the semester. It is imperative that the head TA and instructor clearly communicate expectations with each other to establish exactly how rules and responsibilities that are given to the TAs are assigned. Other administrative duties include reminding other TAs about bi-weekly payroll deadlines and ensure TAs are working their alloted hours per week (and not more). Within these alloted hours, a head TA distributes grading assignments and deadlines to both lab helpers and leaders per week. The head TA makes sure that all TAs complete grading within a week and spot check the grading accuracy and quality of all written feedback given. We have had positive experiences in having a head TA delegate administrative tasks to other members of the teaching team. Pedagogically, head TAs are responsible for creating or reviewing answer keys and grading rubrics for homework and lab assessments as the instructor sees fit. Each head TA is also assigned to instruct one lab section during the semester. Before becoming a Head TA, there is additional training that specializes head TAs in their administrative responsibilities.
 
 The course organizer is expected to work across each section of STA199, instead of working with a single instructor. Their responsibilities include creating rubrics for and working through homework and lab assignments. Additionally the course organizer, along with the instructor, answers real time questions virtually during labs from lab leaders. Questions often range from content related to technical questions about GitHub and R. Finally, the course organizer is responsible for handling all requested assignment extension requests from students. This includes filing away student exemptions, providing extensions for extreme circumstances, and enforcing the late work policy outlined in the syllabus when necessary.
-
 
 Although this is our proposed team structure, we want to emphasize that there is great flexibility in coming up with how a teaching team is built and operates for an introductory to data science course. Among any team, we encourage a system designed to alleviate the grading responsibilities of a large class from a single individual, dispersed into many among the team. When grading, it is suggested that each individual is properly trained on how to grade assessments, and expectations on how to provide feedback are clear. This has often been a point of contention from students in the past. For each assignment, we recommend having one person grade one problem across the entirety of the class roster. This helps adhere to more consistent grading, and encourages more grading questions to be asked when they arise earlier in the grading process.
 
@@ -71,7 +69,6 @@ We can use R, R-studio, and GitHub to create interactive lessons, and assign pre
 ### Why GitHub
 
 We choose to use GitHub for STA199 because it easily and efficiently allows us to create and administer assessments and interactive lessons to a large class size in individual repositories. Further, within these repositories, instructors can provide template code and other resources necessary to best facilitate an interactive lesson where students can code together with the instructor during lecture. Additionally, teaching through GitHub provides the ability to re-use what you currently create as a template for subsequent semesters. Thus, this system both rewards and encourages time investment into the creation of assessments and lesson plans. Moreover, exposing students to version control software early in their academic career helps them develop good habits as researchers and better understand the importance of reproducibility in science. These are just some of the many documented benefits of using GitHub in an introductory data science course. To being, we need each student to create their own GitHub account.
-
 
 ### Setting up a GitHub account
 
@@ -91,6 +88,17 @@ Once students create their account, we suggest getting this information from the
 
 ![](images/github.question.png){fig-align="center"}
 
+Once this information is complete, it was must be exported and stored as a `.csv` file. We recommend having the following structure of data collection.
+
+|           |            |                 |
+|-----------|------------|-----------------|
+| last_name | first_name | github_username |
+|           |            |                 |
+
+: Example Data Collection
+
+
+
 If you, as the instructor, do not have a GitHub account, you will need to create one as well. This student information will be used to enroll students in your created GitHub organization for your course.
 
 ### GitHub organization
@@ -99,8 +107,7 @@ GitHub organizations are shared accounts where instructors and students can coll
 
 ## Why R & R-Studio
 
-R is a statistical programming language for computing and modeling while R-studio is an integrated development environment for R (cite). We choose these resources because they are freely available to download and use, as well as in high demand in different data science positions post graduation (cite). In addition, this programming language has a comprehensive library of packages that allows students to create data visualizations and seamlessly analyze data. For our course, we choose to accomplish learning objectives through predominantly through the `tidyverse` package in R. This package helps students import, tidy, transform, visualize, model, and communicate results. Further, this software is compatible with online versions that students can access without having to go through a local installment if they do not wish or are unable. There exists online versions that can be set up for students, including pre-populating their software with the appropriate packages needed for the semester. 
-
+R is a statistical programming language for computing and modeling while R-studio is an integrated development environment for R (cite). We choose these resources because they are freely available to download and use, as well as in high demand in different data science positions post graduation (cite). In addition, this programming language has a comprehensive library of packages that allows students to create data visualizations and seamlessly analyze data. For our course, we choose to accomplish learning objectives through predominantly through the `tidyverse` package in R. This package helps students import, tidy, transform, visualize, model, and communicate results. Further, this software is compatible with online versions that students can access without having to go through a local installment if they do not wish or are unable. There exists online versions that can be set up for students, including pre-populating their software with the appropriate packages needed for the semester.
 
 ### Setting Up R & R-Studio
 
@@ -110,37 +117,60 @@ In an introductory course, it is recommended to minimize student frustration and
 
 ### Using R & R-Studio to manage GitHub organization
 
-(insert discussion / how-to on ghclass): includes example code on how to invite students to organization.
+To invite students into your GitHub organization, we will use a myriad of functions from the `gh_class` package. (insert discuss on what the gh-class package is).
 
-R, R-studio, and GitHub aids in the creation and implementation our data science pedagogy. This includes the creation and distribution of in-class AEs, lectures, labs, and assessments. In the following sections we describe in detail both how to create, structure, and distribute materials used in STA199.
 
-![](images/pedagogy.png){fig-align="center"}
+To start, we suggest creating a separate repository that will contain all code used to invite students to your organization and to create AEs and assessments for them. Within a document in this new repository, we must first define our GitHub organization as a character string to be used in later function. We suggest calling this `org`. 
+
+```{r}
+org <- "sta-199-s23"
+```
+
+
+
+```{r}
+#|eval: false
+
+# invite members ---------------------------------------------------------------
+
+org_invite(
+  org = org,
+  user = student_name
+)
+
+# get list of members ----------------------------------------------------------
+
+student_name <- org_members(org = org)
+
+```
+
+R, R-studio, and GitHub aids in the creation and implementation our data science pedagogy. This includes the creation and distribution of in-class AEs, lectures, labs, and assessments. In the following sections, we discuss pedagogy, strategies on how to implement in the classroom, and detail the creation of such items using R, R-studio, and GitHub during a typical week in the semester (Figure 2).
+
+![](images/pedagogy.png){fig-align="center"} **Fig 2:** Model of pedagogical choices used in STA199 for a typical week
 
 ## Pedagogy {#sec-ped}
 
--- Reader should want to continue reading by thinking "so how do I teach this"
+In STA199, we have chosen a combination of teaching methods, interactive activities, and learning assessments to help prepare introductory data science students the tools they need to be successful outside of university or in future coursework. Our pedagogy includes a combination of lectures, facilitating in-class AEs, running a lab, and assigning assessments to provide students an opportunity to perform what they've learned.
 
-In this course, we have chosen a combination of teaching methods, interactive activities, and learning assessments to help best prepare introductory data science students the tools they need to be successful outside of university or in future coursework. Our pedagogy includes facilitating in-class AEs, facilitating lectures, running a lab, and assigning assessments to provide students an opportunity to show what they've learned.
+### Lecture & Application Exercises
 
-### Lecture
+During a typical week in the semester, class is held twice a week. Class is a combination of lecture and interactive activities called application exercises (AEs). The amount of time dedicated to lecture and AEs can and should very by instructor. Typically, we allot the first 15 minutes and the last 10 minutes of class for lecture. During this time, students are introduced to new content that will be re-addressed in the AE. To help maximize engagement of such a large class size, we allot more class time to individual and team-based AEs where students are asked to code on their own, together, or along with the instructor.
 
-### Application Exercies (AEs)
+Application exercises are structured interactive lessons that allow students to learn through doing in class. To participate in AEs, students are expected to bring their laptops to class. This expectation is made clear prior to the first day of teaching. The purpose of these exercises are to give students the opportunity to practice apply the statistical concepts and code introduced in the prepare videos, readings, and anything introduced during lecture. When first starting to create an AE, we suggest streamlining the process through a GitHub template repository cloned into R-studio as a project. We choose to use *Quarto* within R-studio to create AEs. This choice is intentional, to provide students the opportunity to practice writing code and answering questions in a reproducible format supported by such programming.
 
-Application exercises are structured interactive lessons that allow students to learn through doing in class. The purpose of these exercises are to give students the opportunity to practice apply the statistical concepts and code introduced in the prepare videos, readings, and anything introduced during lecture. When first starting to create an AE, we suggest streamlining the process through a GitHub template repository cloned into R-studio as a project. We choose to use *Quarto* within R-studio to create AEs. This choice is intentional, to provide students the opportunity to practice writing code and answering questions in a reproducible format supported by such programming.
-
-When creating an AE, we suggest creating a mix of guided and open ended questions that encourage students to both follow along with instructor demonstrations and progress to coding on their own. This format has largely been accepted by students: "I really enjoy the AE's and that you take the time to walk us through the code and answer questions; I like how the ae gives us a chance to practice the skills on our own after class as well. Additionally, we suggest that questions are scaffolded, meaning that if students fall behind or type incorrect code when trying to follow along, that they have the ability to continuing engaging for the remaining AE. This may include having answers to questions in a separate document, or within the same AE towards the bottom. Moreover, we suggest clearly labeling where students are expected to type out answers in text or code throughout the exercise to further streamline their involvement.
+When creating an AE, we suggest creating a mix of coding and concept questions (e.g., fill in the code blanks, short response questions) that encourage students to follow along with instructor demonstrations and also answer questions on their own. This format has largely been accepted and appreciate by students: "I really enjoy the AE's and that you take the time to walk us through the code and answer questions; I like how the ae gives us a chance to practice the skills on our own after class as well. Additionally, we suggest that questions are scaffold, meaning that if students fall behind or type incorrect code when trying to initially follow along, that they have the ability to continuing engaging for the remaining AE. This is especially important at the beginning of the semester ot minimize students' frustration around a new coding language. This may include having answers to questions in a separate Quarto document that students have access to, or within the same document as the AE. Moreover, we suggest clearly labeling where students are expected to type out answers in text or code throughout the exercise to further streamline their involvement and continue to minimize frustration.
 
 An example on an AE used to help teach (insert concept) can be found here:
 
-It is highly recommended to design lessons with built in time to have students work on their own. The amount of time can largely depend on the question being asked, and the teaching style of the instructor. We have found that multiple 3-5 minute blocks for students to answer questions without the instructor's guidance works well. Next, it is encouraged to answer these questions together as a class built off student responses before moving to the next set of material or questions.
+We highly recommended designing lessons with built in time to have students work on their own. The amount of time can largely depend on the question being asked, and the teaching style of the instructor. We have found that multiple 3-5 minute blocks for students to answer questions without the instructor's guidance works well. This has been expecially effective if the code is then created together as a class, built off student responses, to provide immediate feedback before moving on to the next set of material or questions.
 
-We use the function `org_create_assignment` from the `gh_class` package to copy a template repository to students whom are within the class GitHub organization. In order to create
-
-(At this point in the paper, readers should know about github organizations and information to collect from students. Don't let this detail get lost to make this how-to section weaker)
+In order to distribute this template AE to students within the class GitHub organization, we will use the function `org_create_assignment` from the `gh_class` package. We suggest, within your GitHub organization, to create a repository dedicated to have code that is used to distribute AEs and assessments to students. For simplicity, we often name our repository ghclass. Example code on how to distribute an AE to students is below.
 
 ```{r}
 #| eval: false
 
+org <- "sta-199-s23" #name of your github organization
+assignment <- "AE-5" #name of AE you want to distribute 
 
 org_create_assignment(
   org = org,
