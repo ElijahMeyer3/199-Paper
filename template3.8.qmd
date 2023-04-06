@@ -72,7 +72,7 @@ We choose to use GitHub for STA199 because it easily and efficiently allows us t
 
 ### Setting up a GitHub account
 
-To participate in interactive lessons and assessments, students must set up a GitHub account. This is done of the first day of class, and often, students are given time during class to sign up. Following tips from "Happy Git with R" (https://happygitwithr.com/index.html), we suggest students do the following when creating their name:
+To participate in interactive lessons and assessments, students must set up a GitHub account. This is done of the first day of class, and often, students are given time during class to sign up. Following tips from "Happy Git with R" [@bryan_hester_2020], we suggest students do the following when creating their name:
 
 -- Incorporate their actual name
 
