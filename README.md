@@ -11,7 +11,11 @@ Potential Journals: JSDSE or Harvard Data Science
 
 Google Slides for Figures: https://docs.google.com/presentation/d/1_Mm3iwfd5O7hpadq_CCvYrTnfB-FL1X6SMw-sijZo5g/edit#slide=id.g214cddfacbf_0_0
 
-## Bolded Text:
+## Document Name 
+
+template3.8
+
+## Bolded Text 
 
 I have bolded text within the paper to highlight areas within that you (Mine) may be the more appropriate to write a couple sentences on. Further, I have outlined the section + topic below: 
 
