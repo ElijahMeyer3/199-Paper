@@ -29,5 +29,8 @@ Using R & R-Studio to manage GitHub organization
 
 -- Writing on gh_class package + usage (include example code on how to invite students to organization)
 
+## Questions 
+
+We define application exercise and STA199 early in the paper. Do we need to redefine them each section, or can AE and STA199 carry throughout the entire paper after being first defined?
 
 
