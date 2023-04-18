@@ -26,7 +26,7 @@ keywords:
 bibliography: bibliography.bib
 ---
 
-## Introduction 
+## Introduction
 
 ## The Course {#sec-course}
 
@@ -100,6 +100,7 @@ Once this information is collected, it must be exported and stored as a `.csv` f
 |-----------|------------|-----------------|
 | last_name | first_name | github_username |
 |           |            |                 |
+
 **Fig 2: Example Data Collection**
 
 If you, as the instructor, do not have a GitHub account, you will need to create one as well. This student information will be used to enroll students in your created GitHub organization for your course.
@@ -146,7 +147,7 @@ org_invite(
 
 Once the invites are sent, students will need to accept the invitation to the organization.
 
-Streamlining your course through R, R-studio, and GitHub greatly alleviates common challenges that arise when working with a large class size, such as activity and assessment distribution. This includes the creation and distribution of in-class AEs, lectures, labs, and homework assignments. 
+Streamlining your course through R, R-studio, and GitHub greatly alleviates common challenges that arise when working with a large class size, such as activity and assessment distribution. This includes the creation and distribution of in-class AEs, lectures, labs, and homework assignments.
 
 In the following sections, we discuss pedagogy used within our course, strategies on how to implement such pedagogy in the classroom, and detail the creation and distribution of AEs and lab assessments using R, R-studio, and GitHub during a typical week in the semester (Figure 2).
 
@@ -158,9 +159,9 @@ In STA199, we have chosen a combination of teaching methods, interactive activit
 
 ### Lecture & Application Exercises
 
-During a typical week in the semester, class is held twice a week. Class is a combination of lecture and interactive AEs. The amount of time dedicated to lecture and AEs can and should vary by instructor. Typically, we allot the first 15 minutes of class for lecture. During this time, students are introduced to new content that will be re-addressed in the AE. To help maximize engagement of such a large class size, we allot more class time to individual and team-based AEs where students are asked to code on their own, together, or along with the instructor. This is followed by a roughly 5-10 minute allotment for a wrap up lecture, summarizing the highlights of AE. 
+During a typical week in the semester, class is held twice a week. Class is a combination of lecture and interactive AEs. The amount of time dedicated to lecture and AEs can and should vary by instructor. Typically, we allot the first 15 minutes of class for lecture. During this time, students are introduced to new content that will be re-addressed in the AE. To help maximize engagement of such a large class size, we allot more class time to individual and team-based AEs where students are asked to code on their own, together, or along with the instructor. This is followed by a roughly 5-10 minute allotment for a wrap up lecture, summarizing the highlights of AE.
 
-Application exercises are structured interactive lessons that allow students to learn through doing in class. Students are expected to bring their laptops to class to participate in AEs. This expectation is made clear prior to the first day of teaching. The purpose of these exercises are to give students the opportunity to practice apply the statistical concepts and code introduced in the prepare videos, readings, and anything introduced during lecture. 
+Application exercises are structured interactive lessons that allow students to learn through doing in class. Students are expected to bring their laptops to class to participate in AEs. This expectation is made clear prior to the first day of teaching. The purpose of these exercises are to give students the opportunity to practice apply the statistical concepts and code introduced in the prepare videos, readings, and anything introduced during lecture.
 
 When first starting to create an AE, we suggest streamlining the process through a GitHub template repository cloned into R-studio as a project. We choose to use *Quarto*, within R-studio, to create AEs. This choice is intentional, to provide students the opportunity to practice writing code and answering questions in a reproducible format supported by R and R-studio. When designing questions for an AE, we suggest creating a mix of coding and concept questions (e.g., fill in the code blanks, short response questions) that encourage students to follow along with instructor demonstrations, and also provides students an opportunity to answer questions on their own. This format has largely been accepted and appreciated by students: "I really enjoy the AE's and that you take the time to walk us through the code and answer questions; I like how the ae gives us a chance to practice the skills on our own after class as well." Additionally, we suggest that questions are scaffold, meaning that if students fall behind or type incorrect code when trying to initially follow along, that they have access to correct code that grants them the ability to continue engaging for the remaining AE. This is especially important at the beginning of the semester to minimize students' frustration around a new coding language. This may include having answers to questions in a separate Quarto document that students have access to, or within the same document as the AE. Moreover, we suggest clearly labeling where students are expected to type out answers in text or code throughout the exercise to further streamline their involvement and continue to minimize frustration.
 
@@ -253,11 +254,10 @@ A new instructor of data science, or one with an increasing class size should th
 
 There are advantages and disadvantages of having lab leaders and helpers facilitate the lab. Advantages includes having students learning through additional perspectives, while also providing a potentially more inviting atmosphere for questions to be asked about the material. However, disadvantages may include inconsistencies from what is shared in lab vs lecture. It is critical that lab leaders and helpers are trained to both understand and explain concepts consistently to what is being taught during lecture and through the AEs. Additionally we recommend setting the expectation that lab leaders and helpers become familiar with the AE content before facilitating the labs so they can refer students back to resource they are familiar with.
 
-
 ## Discussion
 
-## Conclusion 
+## Conclusion
 
-## Resources 
+## Resources
 
 ## References
