@@ -221,10 +221,26 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, sharp corners, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, frame hidden, breakable, interior hidden, boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
+
+The demand for trained data scientists is putting pressure on
+instructors to create and advance the teachings of such courses. An
+estimated 11.5 million new data science jobs are projected to be created
+by 2026, while employment of data scientists is projected to grow by 36
+percent from 2021 to 2031 \citep{labor_2022}. As demand increases, class
+sizes to best prepare students for these positions increases as well.
+The increasing volume of enrollment of data science students
+\citep{Redmond2022} requires that statistics and data science educators
+commit to developing modern curriculum in order to help students be
+successful. Despite the demand, academics are still struggling with what
+a modern data science curriculum should look like \citep{Schwab2020},
+and how it can be effectively taught to a large student audience. To
+this point, much more thought, work, and discussions need to take place
+there before a consensus is reached on what should a modern data science
+curricula should be.
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -892,6 +908,8 @@ refer students back to resource they are familiar with.
 
 \hypertarget{resources}{%
 \section{Resources}\label{resources}}
+
+\newpage
 
 
 \renewcommand\refname{References}

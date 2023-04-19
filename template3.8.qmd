@@ -28,6 +28,8 @@ bibliography: bibliography.bib
 
 ## Introduction
 
+The demand for trained data scientists is putting pressure on instructors to create and advance the teachings of such courses. An estimated 11.5 million new data science jobs are projected to be created by 2026, while employment of data scientists is projected to grow by 36 percent from 2021 to 2031 [@labor_2022]. As demand increases, class sizes to best prepare students for these positions increases as well. The increasing volume of enrollment of data science students [@Redmond2022] requires that statistics and data science educators commit to developing modern curriculum in order to help students be successful. Despite the demand, academics are still struggling with what a modern data science curriculum should look like [@Schwab2020], and how it can be effectively taught to a large student audience. To this point, much more thought, work, and discussions need to take place there before a consensus is reached on what should a modern data science curricula should be.
+
 ## The Course {#sec-course}
 
 In the following sections, we describe our introductory data science course, offered to predominantly freshman level students at Duke University, titled Introduction to Data Science and Statistical Thinking (STA199). Often, these students are **(interested in / major + minor in / description of typical student demographic)**. Students enrolling in STA199 commonly have little to no statistics, data science, or coding experience. In a typical semester, this course seats roughly 179 students, which is considered to be large by all measures. Both the lack of experience and large class size are identified as two common hurdles by faculty when trying to create and instruct an introductory data science course [@Schwab2020; @Kok_2008]. However, by the end of this course, students are able to use data both the statistical software R and GitHub to create data visualizations, investigate patterns, and model outcomes in a reproducible format.
@@ -259,5 +261,7 @@ There are advantages and disadvantages of having lab leaders and helpers facilit
 ## Conclusion
 
 ## Resources
+
+\newpage
 
 ## References
