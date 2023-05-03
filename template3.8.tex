@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, enhanced, breakable, borderline west={3pt}{0pt}{shadecolor}, interior hidden, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -361,19 +361,26 @@ previous two phases. This is typically done through assessments such as
 homework, labs, exams, and projects. This learning model is a continuous
 cycle throughout the semester as new topics are introduced.
 
-Topics taught through this cycle fall under two major units: Unit 1 -
-Exploring data; Unit 2 - Making rigorous conclusions. In Unit 1,
-students become first introduced to R, R-studio, and Github. During this
-unit, students start to create data visualizations and learn how to both
-import and manipulate data to be better suited for modeling. In Unit 2,
-students extend their investigations with data to include modeling.
-Specifically, students fit a variety of models (simple linear
+Topics taught through this cycle fall under for major units: Exploring
+data; Data science ethics; Making rigorous conclusions; Looking further
+\textbf{(do we cite dsbox?)}. In the first two units, students are
+introduced to R, R-studio, and Github. During exploring data, students
+start to create data visualizations and learn how to both import and
+manipulate data to be better suited for modeling. Next, multiple classes
+are spent having conversations around and facilitating activities on the
+topic of data ethics to help ensure students start developing the skills
+necessary to be responsible researchers. In the next two units, students
+extend their investigations and understandings of data into a modeling
+framework. Specifically, students fit a variety of models (simple linear
 regression, multiple linear regression, logistic regression), and learn
-the fundamentals of hypothesis testing and confidence intervals. For a
-more complete description of the topics taught and data sets used in
-creating these lessons, please see \emph{A fresh look at introductory
-data science} \citep{Cetinkaya2020}. \textbf{TO DO: See updated unit
-breakdown in data science in a box.}
+the fundamentals of hypothesis testing and confidence intervals. The
+looking further section includes independent topics that the instrutor
+can choose to teach, typically at the end of the semester. Topics have
+included Cryptanalysis and Genetic Forensic Analysis, Spatial Data
+visualization, and Shiny application creation. The goal of these lessons
+are to provide an opportunity to have students learn about topics that
+interest them in a no-stakes environment, continuing to excite and
+inspire students into a career in statistics and data science.
 
 In this paper, we describe the preparation and implementation process
 necessary to run STA199, in its entirety. This includes details of a
