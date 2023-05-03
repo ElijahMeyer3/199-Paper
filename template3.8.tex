@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, breakable, enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, frame hidden, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, sharp corners, enhanced, breakable, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -251,20 +251,18 @@ transference---communication and responsibility \citep{veaux_2017}.
 Additionally, the Association for Computing Machinery Education
 Council's Data Science Task Force explores and expands
 discipline-specific conversations around the field of data science
-{[}\citet{Danyluk_2021}. This task force acknowledges that data science
+\citep{Danyluk_2021}. This task force acknowledges that data science
 curricula can be flexible, but suggests that data science curricula
 should include applications designed towards building skills in
 computing, statistics, machine learning and mathematics.
 
-However, there currently lacks alignment between such recommendations
-and what is observed in practice, with the majority of context across
-the landscape of data science curricula largely focusing on how to model
-data \citep{Donoho2017} \textbf{TO DO: Rephrase sentence, I wasn't sure
-what's meant here}. The picture becomes even less clear on what context
-constitutes a well developed modernized introductory data science
-course. This presents a need for a \emph{blueprint} to design and
-implement and modernized introduction to data science course that lays
-the foundation for students to develop an encompassing data science
+However, many of the recommendations are not being put into practice,
+with the majority of current curricula largely focusing on how to model
+data. \citep{Donoho2017}. The picture becomes even less clear on what
+context constitutes a well developed modernized introductory data
+science course. This presents a need for a \emph{blueprint} to design
+and implement and modernized introduction to data science course that
+lays the foundation for students to develop an encompassing data science
 skill set. In this paper, we lay out this blueprint, while addressing
 realistic challenges, instructors may face when developing, creating,
 and implementing an introductory data science course. This discussion is
