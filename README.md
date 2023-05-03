@@ -8,6 +8,10 @@ Goal: Draft out by early May
 
 Potential Journals: JSDSE or Harvard Data Science
 
+# Maria Response to Kaplan Way 
+
+I adopted this framework from Kristin Stephens-Martinez (https://users.cs.duke.edu/~ksm/), a PoP in CS, who has used it to structure some her of intro classes. I think she first heard about it from another intro CS professor at a different institution, so I was actually not aware this was the Kaplan method of teaching . I started using “prepare, practice, perform” for 199 and 210 during the pandemic when I used lecture videos and moved to a more flipped class format. I used this phrasing to help explain the order and purpose of the different course activities (lecture videos, AEs, labs, etc.). So I used the language to (hopefully) more clearly communicate all the moving pieces of the course to students, rather than referring to something specific in the Kaplan method. I would suggest focusing more on the each learning activity rather than the language itself, but you could mention it is the same language used in the Kaplan model. 
+
 
 Google Slides for Figures: https://docs.google.com/presentation/d/1_Mm3iwfd5O7hpadq_CCvYrTnfB-FL1X6SMw-sijZo5g/edit#slide=id.g214cddfacbf_0_0
 
