@@ -221,7 +221,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, sharp corners, enhanced, breakable, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -258,7 +258,7 @@ computing, statistics, machine learning and mathematics.
 
 However, many of the recommendations are not being put into practice,
 with the majority of current curricula largely focusing on how to model
-data. \citep{Donoho2017}. The picture becomes even less clear on what
+data \citep{Donoho2017}. The picture becomes even less clear on what
 context constitutes a well developed modernized introductory data
 science course. This presents a need for a \emph{blueprint} to design
 and implement and modernized introduction to data science course that
@@ -280,16 +280,10 @@ Detailed learning objectives of this course include learning to explore,
 visualize, and analyze data in a reproducible and shareable manner
 through the use of R-studio and GitHub \citep{R21, github}. Through
 these programs, students gain experience in data wrangling, exploratory
-data analysis, predictive modeling, and data visualization. These
-experiences are generated through the \emph{Kaplan Way}. The Kaplan Way
-is a learning model ``that combines a scientific, evidence-based design
-philosophy with a straightforward educational approach to learning''
-\citep{schweser_2023}. This learning model posits a three-phase learning
-strategy: Prepare, Practice, and Perform \textbf{TO DO: Check in with
-Maria about provenance of PPP}. During each of these phases, students
-are equipped with the appropriate tools to acquire knowledge, be given
-an opportunity to apply what they know, and to demonstrate mastery of
-the tasks at hand.
+data analysis, predictive modeling, and data visualization.
+
+\textbf{What if we don't mention Kaplan Way here, and instead bring it
+up later as less of a focus topic of the paper?}
 
 In this paper, we discuss the creation and implementation of curricular
 and pedagogical decisions made in designing the introductory data
@@ -314,18 +308,18 @@ skills necessary for future classes.
 In the following sections, we describe our introductory data science
 course, offered to predominantly freshman level students at Duke
 University, titled Introduction to Data Science and Statistical Thinking
-(STA199). Often, these students are \textbf{(interested in / major +
-minor in / description of typical student demographic) TO DO: Look in
-the getting to know you survey?}. Students enrolling in STA199 commonly
-have little to no statistics, data science, or coding experience. In a
-typical semester, this course seats roughly 179 students, which is
-considered to be large by all measures. Both the lack of experience and
-large class size are identified as two common hurdles by faculty when
-trying to create and instruct an introductory data science course
-\citep{Schwab2020, Kok_2008}. However, by the end of this course,
-students are able to use data both the statistical software R and GitHub
-to create data visualizations, investigate patterns, and model outcomes
-in a reproducible format.
+(STA199). Often, students enrolling in STA199 are undecided on their
+major, but have interests that span across topics such as public policy,
+biology, computer science, nursing, and statistics. Commonly, most
+students have little to no statistics, data science, or coding
+experience. In a typical semester, this course seats roughly 150
+students, which is considered to be large by all measures. Both the lack
+of experience and large class size are identified as two common hurdles
+by faculty when trying to create and instruct an introductory data
+science course \citep{Schwab2020, Kok_2008}. However, by the end of this
+course, students are able to use data both the statistical software R
+and GitHub to create data visualizations, investigate patterns, and
+model outcomes in a reproducible format.
 
 This course is built on four large-scale learning objectives: learn to
 explore, visualize and analyze data in a reproducible and shareable
