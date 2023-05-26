@@ -227,8 +227,19 @@ It is imperative that universities create and implement modernized data science 
 However, there is little consensus on the technological and implementation procedures necessary to create and conduct a modernized introductory data science course. We believe that the *Introductory to Data Science and Statistical Reasoning* helps establish a start to a consensus while providing a flexible framework for other instructors to create and facilitate their own introductory data science course. 
 
 
+It is highly advised that live coding sessions be the main staple of your classroom when teaching students. Live coding sessions continue to be accepted as one of the best pedagogical practices for teaching coding (https://dl.acm.org/doi/abs/10.1145/3430665.3456382), and have been met in our classrooms with overwhelming positivity from students: "insert more quotes." 
+
+For this to successful, we suggest spending the first couple classes establishing a routine with your students. This routine ensures that students clone the live coding exercise (application exercise) prior to the start of class, and understand that the expectation is to "learn through doing" in live coding sessions. 
 
 
+Despite this suggestion, there are always situations where students can fall behind in class, limiting the amount of value they may receive from the day's lesson. Thus, we have come up with strategies to try and mitigate the situation. First, the majority of student coding at the beginning of the semester is done through fill in the blank templates created by the instructor. This tends to ease tension for those first learning code, and help instill confidence when the code runs. Secondly, it is suggested to design questions in such a way where there is little dependency across questions. This means that, if a student falls behind and is unable to answer one question, this will not deter them from being involved in upcoming questions. If you do have questions dependent on each other, we advise providing the answers to the beginning questions in the same or different document for students to reference and run so they can continue following along. 
+
+With the time investment needed to create enticing and interactive AEs, it is critical that these resources are easily transferable across semesters. The design and facilitation of this course is through GitHub. This ensures that the course content is feasible to adapt to teach for multiple semesters as classes change and data science continues to evolve. In short, there is value in the investment to quality resources early in the classes development, saving time for future renditions. 
+
+Additional benefits in deciding to run the course through GitHub help alleviate the burdens of large class sizes. Using the `ghclass` package in R, an instructor can seamlessly distribute homework, labs, and live coding exercises to as many students as necessary in little time. 
+
+
+## Supplementary materials
 
 
 
