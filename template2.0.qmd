@@ -222,6 +222,28 @@ Lectures are recorded and made available to students with an excused absence upo
 
 ## Discussion
 
+It is imperative that universities create and implement modernized data science curricula to both prepare and inspire students to continue their data science education. This starts with the design and development of an introductory data science course. At Duke University, the technological preparations students receive in STA199 have pushed higher level courses, such as courses in regression, to incorporate Quarto for reproducibility and GitHub for collaboration and version control. 
+
+However, there is little consensus on the technological and implementation procedures necessary to create and conduct a modernized introductory data science course. We believe that the *Introductory to Data Science and Statistical Reasoning* helps establish a start to a consensus while providing a flexible framework for other instructors to create and facilitate their own introductory data science course. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Pros (What works well)
 
 Ex. Live coding good
@@ -241,3 +263,8 @@ Examples include
 -- Human Resources
 
 \newpage
+
+
+
+
+the *Kaplan Way*. The Kaplan Way is a learning model "that combines a scientific, evidence-based design philosophy with a straightforward educational approach to learning" [@schweser_2023]. This learning model posits a three-phase learning strategy: Prepare, Practice, and Perform **TO DO: Check in with Maria about provenance of PPP**. During each of these phases, students are equipped with the appropriate tools to acquire knowledge, be given an opportunity to apply what they know, and to demonstrate mastery of the tasks at hand.
