@@ -7,7 +7,6 @@
   12pt]{article}
 
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -17,6 +16,10 @@
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -162,10 +165,12 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
 \makeatother
 \makeatletter
 \@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
 \makeatother
 \makeatletter
 \makeatother
@@ -198,7 +203,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\date{June 3, 2023}
+\date{June 26, 2023}
 \title{\bf Introductory Data Science: A Blueprint to Navigate
 Curricular, Pedagogical, and Computational Challenges}
 \author{
@@ -221,7 +226,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, enhanced, frame hidden, sharp corners, interior hidden, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, frame hidden, sharp corners]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -277,7 +282,7 @@ course \citep{Schwab2020}. By the end of this course, students are
 expected and able to clean, investigate, and communicate with data in a
 reproducible manner. Detailed learning objectives of this course include
 learning to explore, visualize, and analyze data in a reproducible and
-shareable manner through the use of R-studio and GitHub
+shareable manner through the use of RStudio and GitHub
 \citep{R21, github}. Through these programs, students gain experience in
 data wrangling, exploratory data analysis, predictive modeling, and data
 visualization.
@@ -294,7 +299,7 @@ class of students with a diverse background in statistics, data science,
 and coding experience. Within this format, we provide examples of and
 describe activities and assessments given both in and outside of class.
 We extend discussions and provide recommendations for implementing and
-integrating computing tools, such as R-studio and GitHub, through our
+integrating computing tools, such as RStudio and GitHub, through our
 experiences in our course. Lastly, we discuss challenges, and provide
 insight to help instructors wanting to adopt or adapt a course similar
 to introductory to data science at Duke University. The purpose of this
@@ -366,7 +371,7 @@ cycle throughout the semester as new topics are introduced.
 Topics taught through this cycle fall under for major units: Exploring
 data; Data science ethics; Making rigorous conclusions; Looking further
 \textbf{(do we cite dsbox?)}. In the first two units, students are
-introduced to R, R-studio, and Github. During exploring data, students
+introduced to R, RStudio, and Github. During exploring data, students
 start to create data visualizations and learn how to both import and
 manipulate data to be better suited for modeling. Next, multiple classes
 are spent having conversations around and facilitating activities on the
@@ -501,11 +506,11 @@ out if they have any questions about what was discussed.
 \hypertarget{sec-tech}{%
 \section{Technology}\label{sec-tech}}
 
-We use R, R-studio, and GitHub to create interactive lessons, and assign
+We use R, RStudio, and GitHub to create interactive lessons, and assign
 pre-created assessments to individual or groups of students. In the
 following sections, we detail the computing infrastructure needed to do
-so. This includes details and examples with R, R-studio, and GitHub,
-from the instructor's perspective, to set up lectures, AEs, labs and
+so. This includes details and examples with R, RStudio, and GitHub, from
+the instructor's perspective, to set up lectures, AEs, labs and
 homework. First, we justify our decision to use GitHub in STA199 before
 detailing necessary steps and student information needed so creation can
 take place.
@@ -573,11 +578,12 @@ Once this information is collected, it must be exported and stored as a
 following structure of data collected from the survey.
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule()
+\toprule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 last\_name & first\_name & github\_username \\
 & & \\
-\bottomrule()
 \end{longtable}
 
 \textbf{Fig 2: Example Data Collection}
@@ -596,17 +602,17 @@ icon in the upper right hand corner, clicking \emph{Settings},
 \emph{Access}, \emph{New Organization}. It's suggested to name this
 organization the name of your class and the current semester you
 teaching in (i.e., sta199-s23). Once your organization is created, you
-can use packages within R and R-studio to invite students to enroll.
-Once enrolled, we can create and efficiently distribute assessments and
-live coding activities for them to access on their own laptop device.
+can use packages within R and RStudio to invite students to enroll. Once
+enrolled, we can create and efficiently distribute assessments and live
+coding activities for them to access on their own laptop device.
 
-\hypertarget{why-r-r-studio}{%
-\section{Why R \& R-Studio}\label{why-r-r-studio}}
+\hypertarget{why-r-rstudio}{%
+\section{Why R \& RStudio}\label{why-r-rstudio}}
 
 R is a statistical programming language for computing and modeling while
-R-studio is an integrated development environment for R \citep{Rcite}.
-We choose these resources because they are freely available to download
-and are currently in high demand in different data science job
+RStudio is an integrated development environment for R \citep{Rcite}. We
+choose these resources because they are freely available to download and
+are currently in high demand in different data science job
 opportunities. In addition, this programming language has a
 comprehensive library of packages that allows students to create data
 visualizations and seamlessly analyze data, aligning with our learning
@@ -619,30 +625,30 @@ the semester. Addressing these hurdles for students early is
 advantageous any instructor who is working with a large amount of
 students that are inexperienced with coding.
 
-\hypertarget{setting-up-students-r-r-studio}{%
+\hypertarget{setting-up-students-r-rstudio}{%
 \subsection{Setting Up Students R \&
-R-Studio}\label{setting-up-students-r-r-studio}}
+RStudio}\label{setting-up-students-r-rstudio}}
 
 In an introductory course, it is recommended to minimize student
 frustration and distraction through the use of pre-packaged
 computational infrastructure \citep{Rundel2018}. Per this
-recommendation, STA199 has students use R and R-studio through a
+recommendation, STA199 has students use R and RStudio through a
 \emph{Duke Container}. Duke containers provides instructors at Duke
 university the opportunity to facilitate the use of different software,
-such as R and R-studio, through an online container instead of needing
+such as R and RStudio, through an online container instead of needing
 students to locally download both programs. Additionally, instructors
 have the ability to manage and install packages students will need for
 the semester, helping provide a neat and well organized starting
 experience with a new statistical language. \textbf{(insert discussion
 on how this is done)}.
 
-\textbf{(Transition to R-studio cloud discussion? What alternatives can
+\textbf{(Transition to RStudio cloud discussion? What alternatives can
 instructors use to imitate Duke containers if this is something they do
 not have access to at their university.)}
 
-\hypertarget{using-r-r-studio-to-manage-github-organization}{%
-\subsection{Using R \& R-Studio to Manage GitHub
-organization}\label{using-r-r-studio-to-manage-github-organization}}
+\hypertarget{using-r-rstudio-to-manage-github-organization}{%
+\subsection{Using R \& RStudio to Manage GitHub
+organization}\label{using-r-rstudio-to-manage-github-organization}}
 
 To invite students into your GitHub organization, we will use a myriad
 of functions from the \texttt{gh\_class} package. \textbf{(insert
@@ -683,7 +689,7 @@ For the example below, we chose to name the student survey data as
 Once the invites are sent, students will need to accept the invitation
 to the organization.
 
-Streamlining your course through R, R-studio, and GitHub greatly
+Streamlining your course through R, RStudio, and GitHub greatly
 alleviates common challenges that arise when working with a large class
 size, such as activity and assessment distribution. This includes the
 creation and distribution of in-class AEs, lectures, labs, and homework
@@ -692,7 +698,7 @@ assignments.
 In the following sections, we discuss pedagogy used within our course,
 strategies on how to implement such pedagogy in the classroom, and
 detail the creation and distribution of AEs and lab assessments using R,
-R-studio, and GitHub during a typical week in the semester (Figure 2).
+RStudio, and GitHub during a typical week in the semester (Figure 2).
 
 \includegraphics{images/pedagogy.png} \textbf{Fig 2:} Model of
 pedagogical choices used in STA199 for a typical week
@@ -731,11 +737,11 @@ concepts and code introduced in the prepare videos, readings, and
 anything introduced during lecture.
 
 When first starting to create an AE, we suggest streamlining the process
-through a GitHub template repository cloned into R-studio as a project.
-We choose to use \emph{Quarto}, within R-studio, to create AEs. This
+through a GitHub template repository cloned into RStudio as a project.
+We choose to use \emph{Quarto}, within RStudio, to create AEs. This
 choice is intentional, to provide students the opportunity to practice
 writing code and answering questions in a reproducible format supported
-by R and R-studio. When designing questions for an AE, we suggest
+by R and RStudio. When designing questions for an AE, we suggest
 creating a mix of coding and concept questions (e.g., fill in the code
 blanks, short response questions) that encourage students to follow
 along with instructor demonstrations, and also provides students an
@@ -873,12 +879,13 @@ name used to create their team repositories for the remaining labs. We
 add this information as follows to the roster document.
 
 \begin{longtable}[]{@{}llll@{}}
-\toprule()
+\toprule\noalign{}
 team\_name & last\_name & first\_name & github\_username \\
-\midrule()
+\midrule\noalign{}
 \endhead
+\bottomrule\noalign{}
+\endlastfoot
 & & & \\
-\bottomrule()
 \end{longtable}
 
 From this point forward in the semester, we choose to have all labs be
@@ -1040,11 +1047,11 @@ Rstudio for this course. Thus, we suggest using an online platform
 capable of hosting R and Rstudio for students. Alleviating initial
 frustrations through these means further provide a more inviting
 experience to those who have never coded before. If your university does
-not provide these measures, we suggest using \emph{R-studio cloud} (do
+not provide these measures, we suggest using \emph{RStudio cloud} (do
 we?).
 
 Additionally, prompt feedback on assessments is critical in developing
-students understanding of R and R-studio. We have decided to implement a
+students understanding of R and RStudio. We have decided to implement a
 teaching team, and share the responsibility of grading to increase turn
 around time. Having a teaching team also provides students multiple
 opportunities to receive help on material from a variety of
