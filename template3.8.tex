@@ -226,7 +226,7 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, frame hidden, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, sharp corners, frame hidden, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -315,7 +315,7 @@ to best fit their university.
 In the following sections, we describe our introductory data science
 course, offered to predominantly freshman level students at Duke
 University, titled Introduction to Data Science and Statistical Thinking
-(STA199). Often, students enrolling in STA199 are undecided on their
+(STA 199). Often, students enrolling in STA 199 are undecided on their
 major, but have interests that span across topics such as public policy,
 biology, computer science, nursing, and statistics. Commonly, most
 students have little to no statistics, data science, or coding
@@ -383,19 +383,21 @@ regression, multiple linear regression, logistic regression), and learn
 the fundamentals of hypothesis testing and confidence intervals. The
 looking further section includes independent topics that the instructor
 can choose to teach, typically at the end of the semester. Topics have
-included Cryptanalysis and Genetic Forensic Analysis, Spatial Data
-visualization, and Shiny application creation. The goal of these lessons
-are to provide an opportunity to have students learn about topics that
-interest them in a no-stakes environment, continuing to excite and
-inspire students into a career in statistics and data science.
+included cryptanalysis and genetic forensic analysis, visualizing
+spatial data, Bayesian inference, creating interactive web applications
+with Shiny, and text analysis and text modeling. The goal of these
+lessons are to provide an opportunity to have students learn about
+topics that interest them in a no-stakes environment, continuing to
+excite and inspire students into a career in statistics and data
+science.
 
 In the following sections, we describe the preparation and
-implementation process necessary to run STA199, in its entirety. This
+implementation process necessary to run STA 199, in its entirety. This
 includes details of a teaching team used to instruct, technology we've
 chosen to use, as well as our pedagogical choices that go into a typical
 week of teaching. This comprehensive description is encouraged to be
 used as a flexible framework on how to create, set up, and implement an
-introduction to data science course similar to STA199. In this
+introduction to data science course similar to STA 199. In this
 description, we articulate first hand experiences, suggestions, and
 provide example code and lessons that aim to support newer instructors
 who are developing or teaching an introductory data science course;
@@ -454,7 +456,7 @@ section during the semester. Before becoming a Head TA, there is
 additional training that specializes head TAs in their administrative
 responsibilities.
 
-The course organizer is expected to work across each section of STA199,
+The course organizer is expected to work across each section of STA 199,
 instead of working with a single instructor. Their responsibilities
 include creating rubrics for and working through homework and lab
 assignments. Additionally the course organizer, along with the
@@ -511,14 +513,14 @@ pre-created assessments to individual or groups of students. In the
 following sections, we detail the computing infrastructure needed to do
 so. This includes details and examples with R, RStudio, and GitHub, from
 the instructor's perspective, to set up lectures, AEs, labs and
-homework. First, we justify our decision to use GitHub in STA199 before
+homework. First, we justify our decision to use GitHub in STA 199 before
 detailing necessary steps and student information needed so creation can
 take place.
 
 \hypertarget{why-github}{%
 \subsection{Why GitHub}\label{why-github}}
 
-We choose to use GitHub for STA199 because it easily and efficiently
+We choose to use GitHub for STA 199 because it easily and efficiently
 allows us to create and administer assessments and interactive lessons
 to a large class size in individual GitHub repositories. Further, within
 these repositories, instructors can provide template code and other
@@ -601,7 +603,7 @@ you can create a new GitHub organization by clicking on your profile
 icon in the upper right hand corner, clicking \emph{Settings},
 \emph{Access}, \emph{New Organization}. It's suggested to name this
 organization the name of your class and the current semester you
-teaching in (i.e., sta199-s23). Once your organization is created, you
+teaching in (i.e., STA 199-s23). Once your organization is created, you
 can use packages within R and RStudio to invite students to enroll. Once
 enrolled, we can create and efficiently distribute assessments and live
 coding activities for them to access on their own laptop device.
@@ -632,7 +634,7 @@ RStudio}\label{setting-up-students-r-rstudio}}
 In an introductory course, it is recommended to minimize student
 frustration and distraction through the use of pre-packaged
 computational infrastructure \citep{Rundel2018}. Per this
-recommendation, STA199 has students use R and RStudio through a
+recommendation, STA 199 has students use R and RStudio through a
 \emph{Duke Container}. Duke containers provides instructors at Duke
 university the opportunity to facilitate the use of different software,
 such as R and RStudio, through an online container instead of needing
@@ -701,17 +703,17 @@ detail the creation and distribution of AEs and lab assessments using R,
 RStudio, and GitHub during a typical week in the semester (Figure 2).
 
 \includegraphics{images/pedagogy.png} \textbf{Fig 2:} Model of
-pedagogical choices used in STA199 for a typical week
+pedagogical choices used in STA 199 for a typical week
 
 \hypertarget{sec-ped}{%
 \section{Pedagogy}\label{sec-ped}}
 
-In STA199, we have chosen a combination of teaching methods, interactive
-activities, and learning assessments to help prepare introductory data
-science students the tools they need to be successful outside of
-university or in future coursework. Our pedagogy includes a combination
-of lectures, facilitating in-class AEs, and running a lab, to provide
-students an opportunity to perform what they've learned.
+In STA 199, we have chosen a combination of teaching methods,
+interactive activities, and learning assessments to help prepare
+introductory data science students the tools they need to be successful
+outside of university or in future coursework. Our pedagogy includes a
+combination of lectures, facilitating in-class AEs, and running a lab,
+to provide students an opportunity to perform what they've learned.
 
 \hypertarget{lecture-application-exercises}{%
 \subsection{Lecture \& Application
@@ -798,12 +800,12 @@ error discussion?).}
 
 \textbf{(Code to create ``second batch of AEs'' if needed?)}
 
-Hands on interactive AEs are the backbone of learning in STA199. We have
-found that providing students with the opportunity to code in real-time
-during class keeps them more engaged and eager to continue learning
-about the material, versus simply lecturing for a 75-minute period. This
-strategy has received positive feedback from students with varying
-degrees of coding and statistics experience.
+Hands on interactive AEs are the backbone of learning in STA 199. We
+have found that providing students with the opportunity to code in
+real-time during class keeps them more engaged and eager to continue
+learning about the material, versus simply lecturing for a 75-minute
+period. This strategy has received positive feedback from students with
+varying degrees of coding and statistics experience.
 
 As highlighted in previous sections this system, streamlined through
 GitHub, encourages time investment into the creation of AEs. Investing
@@ -833,7 +835,7 @@ you see fit.
 \hypertarget{labs}{%
 \subsection{Labs}\label{labs}}
 
-Labs for STA199 meet once a week for 75 minutes, and are facilitated by
+Labs for STA 199 meet once a week for 75 minutes, and are facilitated by
 lab leaders and lab helpers. The purpose of labs are to allow students
 to apply concepts found in prepare material, lecture, and AEs, to
 various data analysis scenarios. Lab section sizes are kept to around 30
@@ -987,8 +989,8 @@ science curricula to both prepare and inspire students to continue their
 data science education. This starts with the design and development of
 an introductory data science course capable of arming students with the
 tools necessary for success in the field. The incorporated technology in
-STA199 able the instructor to efficiently instruct large class sizes and
-instill vital skill sets to those who have little to no coding
+STA 199 able the instructor to efficiently instruct large class sizes
+and instill vital skill sets to those who have little to no coding
 experience. We believe that this paper helps establish a start to a
 consensus while providing a flexible framework for other instructors to
 create and facilitate their own introductory data science course. Below,
