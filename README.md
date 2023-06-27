@@ -1,5 +1,11 @@
 # Introductory Data Science: A Blueprint to Design Curriculum and Pedagogy. 
 
+# Figures 
+
+Document of new theory figure + other figures to replace code in document: https://docs.google.com/presentation/d/1ZfVpx-T7YrLUiEuzz92z-5aYRZ1k4FIZFSuyxnV6vdU/edit?usp=sharing
+
+## Value 
+
 Value: Demand for data science skillsets are inscreasing. As demand increases, class sizes to best prepare students with these skills are increasing as well. However, there is still debate over what modern data science curricula should look like. We present a flexiable framework that highlights our implementation of technical, pedagogical, and curriculur decisions within our Introductory to Data Science course at Duke University. 
 
 Audience - new to teaching / teachers increasing course size / teachers wanting to "modernize" their course 
@@ -17,7 +23,7 @@ Google Slides for Figures: https://docs.google.com/presentation/d/1_Mm3iwfd5O7hp
 
 ## Document Name 
 
-template3.8
+blueprint
 
 ## Bolded Text 
 
