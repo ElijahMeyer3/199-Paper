@@ -1,5 +1,5 @@
 ---
-title: "Introductory Data Science: A Blueprint to Navigate Curricular, Pedagogical, and Computational Challenges"
+title: "Introductory Data Science: A Blueprint to Design Curriculum and Pedagogy"
 format:
   jasa-pdf:
     keep-tex: true
