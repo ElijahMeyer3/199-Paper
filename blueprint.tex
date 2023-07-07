@@ -221,10 +221,12 @@ The text of your abstract. 200 or fewer words.
 
 \newpage
 \spacingset{1.9} % DON'T change the spacing!
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, enhanced, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, breakable, frame hidden, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, breakable, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, frame hidden, interior hidden, sharp corners]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
+
+\textbf{TO DO: Implement blinding}
 
 The demand for data science is here. An estimated 11.5 million new data
 science jobs are projected to be created by 2026, while employment of
@@ -246,29 +248,35 @@ To answer this call, the Curriculum Guidelines for Undergraduate
 Programs in Data Science provided six major recommendations as to what
 practitioners of data science should be competent in: computational and
 statistical thinking, mathematical foundations, model building and
-assessment, algorithms and software foundation, data curation, knowledge
-transference---communication and responsibility \citep{veaux_2017}.
-Additionally, the Association for Computing Machinery Education
-Council's Data Science Task Force explores and expands
-discipline-specific conversations around the field of data science
-\citep{Danyluk_2021}. This task force acknowledges that data science
-curricula can be flexible, but suggests that data science curricula
-should include applications designed towards building skills in
-computing, statistics, machine learning and mathematics.
+assessment, algorithms and software foundation, data curation,
+communication and responsibility \citep{veaux_2017}. Additionally, the
+Association for Computing Machinery Education Council's Data Science
+Task Force explores and expands discipline-specific conversations around
+the field of data science \citep{Danyluk_2021}. This task force
+acknowledges that data science curricula can be flexible, but suggests
+that data science curricula should include applications designed towards
+building skills in computing, statistics, machine learning and
+mathematics.
 
-However, many of the recommendations are not being put into practice,
-with the majority of current curricula largely focusing on how to model
-data \citep{Donoho2017}. The picture becomes even less clear on what
-context constitutes a well developed modernized introductory data
-science course. This presents a need for a \emph{blueprint} to design
-and implement and modernized introduction to data science course that
-lays the foundation for students to develop an encompassing data science
-skill set. In this paper, we lay out this blueprint, while addressing
-realistic challenges, instructors may face when developing, creating,
-and implementing an introductory data science course. This discussion is
-through the lens of a modernized data science curricula for an
-introductory data science course at Duke University \textbf{TO DO:
-Implement blinding}.
+However, it is difficult to create a new course. It becomes even more
+challenging to create a course in-tune to the guidelines above. Thus,
+many of the recommendations are not being observed, with the majority of
+current curricula largely focusing on how to model data
+\citep{Donoho2017}. The picture becomes even less clear on what context
+constitutes a well developed modernized introductory data science
+course. As the demand for data science trickles down from the work force
+into university, it is critical that students' initial experiences with
+introductory data science helps inspire students into this field, and
+ensure they are best prepared for future courses.
+
+This presents a need for a \emph{blueprint} to design and implement and
+modernized introduction to data science course that lays the foundation
+for students to develop an encompassing data science skill set. In this
+paper, we lay out this blueprint, while addressing realistic challenges
+both we have faced and other instructors may face when developing,
+creating, and implementing an introductory data science course. This
+discussion is through the lens of a modernized data science curricula
+for an introductory data science course at Duke University.
 
 This course is designed for large class sizes that enrolls students with
 little to no statistics, data science, or coding experience, common
@@ -282,27 +290,23 @@ shareable manner through the use of RStudio and GitHub
 data wrangling, exploratory data analysis, predictive modeling, and data
 visualization.
 
-\textbf{What if we don't mention Kaplan Way here as a section, briefly
-mention it below, and instead bring it up later as less of a focus topic
-of the paper?}
-
 In this paper, we discuss the creation and implementation of curricular
 and pedagogical decisions made in designing the introductory data
 science course at Duke University. This includes detailing the
-implementation of the Kaplan Way learning model, to support a large
-class of students with a diverse background in statistics, data science,
-and coding experience. Within this format, we provide examples of and
-describe activities and assessments given both in and outside of class.
-We extend discussions and provide recommendations for implementing and
-integrating computing tools, such as RStudio and GitHub, through our
-experiences in our course. Lastly, we discuss challenges, and provide
-insight to help instructors wanting to adopt or adapt a course similar
-to introductory to data science at Duke University. The purpose of this
-paper is to create a discussion around a modernized curricula for an
-introductory data science course, and the pedagogical decisions to help
-best equip students with the data science skills necessary for future
-classes, so that instructors can adopt, adapt, and mold these decisions
-to best fit their university.
+implementation of our student learning model to support a large class of
+students with a diverse background in statistics, data science, and
+coding experience. Additionally, we provide examples of and describe
+activities and assessments given both in and outside of class. We extend
+discussions and provide recommendations for implementing and integrating
+computing tools, such as RStudio and GitHub, through our experiences in
+our course. Lastly, we discuss challenges, and provide insight to help
+instructors wanting to adopt or adapt a course similar to introductory
+to the one we describe. The purpose of this paper is to create a
+discussion around a modernized curricula for an introductory data
+science course, and the pedagogical decisions to help best equip
+students with the data science skills necessary for future classes, so
+that instructors can adopt, adapt, and mold these decisions to best fit
+their university.
 
 \hypertarget{sec-course}{%
 \section{The Course}\label{sec-course}}
@@ -311,21 +315,16 @@ The design of this course is largely influenced by the \textbf{data
 science in a box} design principles (cite). This includes inspiring
 students early by showing students the ``end result'', and encourage
 students to make their first meaningful data visualization on day one.
-
-In the following sections, we describe our specific introductory data
-science course, offered to predominantly freshman level students at Duke
-University, to provide a flexible ``first-person'' perspective blueprint
-for course creation, modernization, and implementation. For more general
-information on the leading design principles of this course, please see
-the following
-\href{https://datasciencebox.org/01-design-principles.html}{here}. For
-more information specific to the course content, please refer to the
-following paper
-\href{https://www.tandfonline.com/doi/epdf/10.1080/10691898.2020.1804497?needAccess=true\&role=button}{here}
-\citep{Cetinkaya2020}.
+In the following sections, we provide a flexible ``first-person''
+perspective blueprint for course creation, modernization, and
+implementation through the lens of our introductory data science course
+at Duke University. For more general information on the leading design
+principles of this course, please see the data science in a box design
+principles
+\href{https://datasciencebox.org/01-design-principles.html}{here}.
 
 Our course, titled \textbf{Introduction to Data Science and Statistical
-thinking} (STA199), often has students undecided on their major, but
+thinking} (STA199), often houses students undecided on their major, but
 have interests that span across topics such as public policy, biology,
 computer science, nursing, and statistics. Commonly, most students have
 little to no statistics, data science, or coding experience. In a
@@ -334,9 +333,9 @@ considered to be large by all measures. Both the lack of experience and
 large class size are identified as two common hurdles by faculty when
 trying to create and instruct an introductory data science course
 \citep{Schwab2020, Kok_2008}. However, by the end of this course,
-students are able to use data both the statistical software R and GitHub
-to create data visualizations, investigate patterns, and model outcomes
-in a reproducible format.
+students are able to use both the statistical software R and GitHub to
+create data visualizations, investigate patterns, and model outcomes in
+a reproducible format.
 
 This course is built on four large-scale learning objectives: learn to
 explore, visualize and analyze data in a reproducible and shareable
@@ -348,35 +347,33 @@ project presentation. These objectives are accomplished through
 interactive lectures and labs that present content, problems, and case
 studies inspired by and based on real-world questions and data.
 
-When teaching, instructors are committed to the Kaplan Way learning
-model (Figure 1) ``that combines a scientific, evidence-based design
-philosophy with a straightforward educational approach to learning''
-\citep[pg. 3]{schweser_2023}.
+When teaching, instructors are committed to helping students build up a
+foundation of knowledge that sets a stage for each student to not only
+accomplish tasks, but train their brain to work through complex
+statistical and coding problems (Figure 1).
 
-\includegraphics{images/Kaplan.png} \textbf{Fig 1:} Kaplan Learning
-Model for STA 199
+\includegraphics{images/learning_model.png} \textbf{Fig 1:} Data Science
+Student Learning Model for STA 199
 
-This model is composed of three phases: prepare, practice, and perform.
-All three phases are designed to guide the instructor in facilitating an
-overall quality learning experience for the student. Each of these
-phases are performed during a typical week within a semester,
-accomplished through preparation materials, lectures, in-class
-application exercises (AEs), labs, and assessments.
+This model yields five components that are woven into the structure and
+assessments of the course. In the initial phase, students are first
+introduced to content through assigned readings, videos, and lectures.
+During this, students learn through multiple modes of teaching, and
+create a foundation of information that they can continue to build upon.
+They do this through a hands on \textbf{training} by completing in-class
+application exercises. During these exercises, students are given
+in-class opportunities to solve problems individually, as a group, and
+at the class level. During this time, there is emphasis placed both on
+the \textbf{doing}, or steps needed to accomplish the task, as well as
+the \textbf{thinking} or training of the brain to accomplish similar
+tasks in the future. This culminates into providing assessments that
+allow students to show the what they have learned, and connections they
+can make through targetted assessments such as homeworks, quizzes,
+exams, and project components.
 
-During the prepare phase, students are completing readings, watching
-videos, and listening to lectures. These modes of learning ultimately
-helps students' develop a new foundation of data science concepts. The
-goal of the prepare phase is to put students in a position where they
-can build upon what they are learning, and create new knowledge through
-the practice phase. The practice phase is designed to be an opportunity
-for students to reinforce the new information gained, as well as uncover
-new concepts in data science. This is achieved through the use of
-interactive AEs administered in class where students either work alone,
-in groups, or with the instructor in live coding sessions. Finally,
-students enter the perform phase, showcasing their progress made in the
-previous two phases. This is typically done through assessments such as
-homework, labs, exams, and projects. This learning model is a continuous
-cycle throughout the semester as new topics are introduced.
+This model is designed to situate the student and guide the instructor
+in facilitating an overall quality learning experience. This model
+outlines a process performed during a typical week within a semester.
 
 Topics taught through this cycle fall under for major units: Exploring
 data; Data science ethics; Making rigorous conclusions; Looking further
@@ -399,7 +396,10 @@ with Shiny, and text analysis and text modeling. The goal of these
 lessons are to provide an opportunity to have students learn about
 topics that interest them in a no-stakes environment, continuing to
 excite and inspire students into a career in statistics and data
-science.
+science. For more information specific to the course content, please
+refer to the following paper
+\href{https://www.tandfonline.com/doi/epdf/10.1080/10691898.2020.1804497?needAccess=true\&role=button}{here}
+\citep{Cetinkaya2020}.
 
 In the following sections, we describe the preparation and
 implementation process necessary to run STA 199, in its entirety. This
