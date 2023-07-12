@@ -156,3 +156,7 @@ There are three forms of assessment in this course
 #### Project 
 
 ## Discussion
+
+## Kap 
+
+During the prepare phase, students are completing readings, watching videos, and listening to lectures. These modes of learning ultimately helps students' develop a new foundation of data science concepts. The goal of the prepare phase is to put students in a position where they can build upon what they are learning, and create new knowledge through the practice phase. The practice phase is designed to be an opportunity for students to reinforce the new information gained, as well as uncover new concepts in data science. This is achieved through the use of interactive AEs administered in class where students either work alone, in groups, or with the instructor in live coding sessions. Finally, students enter the perform phase, showcasing their progress made in the previous two phases. This is typically done through assessments such as homework, labs, exams, and projects. This learning model is a continuous cycle throughout the semester as new topics are introduced.
